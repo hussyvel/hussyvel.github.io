@@ -44,9 +44,11 @@ a:hover {
 }
 
 .description {
-    padding: 50px;
-    text-align: center, justify, bold;
+    
     color:whitesmoke;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 25px;
+    padding: 50px;
+    text-align: center, justify, bold;
+   
 }
