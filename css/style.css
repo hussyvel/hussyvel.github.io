@@ -1,0 +1,44 @@
+body {
+background-image: url("../_img/systemfailure.jpg");
+    background-size:  100%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.menu {
+
+background-color: white;
+
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-title, .site-subtitle {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+}
+
+.image {
+    width: 150px;
+}
