@@ -1,5 +1,5 @@
 body {
-background-image: url("../img/systemfailure.jpg");
+    background-image: url("../img/systemfailure.jpg");
     background-size:  100%;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -40,15 +40,17 @@ a:hover {
 }
 
 .image {
+    display: block;
     width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-.description {
-    
+.description {   
     color:whitesmoke;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 25px;
     padding: 50px;
-    text-align: center, justify;
-   
+    text-align: center, justify;  
 }
