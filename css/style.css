@@ -1,16 +1,52 @@
-body {
-    background-image: url("../img/systemfailure.jpg");
-    background-size:  100%;
+/*soft reset do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    background-image: url("../img/blackbackground.jpeg"); 
+    background-size: auto 100vh;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    font-size: 12px;
 }
+
+/*se a tela tiver pelo menos 400px vai carregar esses estilos*/
+@media(min-width: 400px){
+    body {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 600px){
+    body {
+        font-size: 18px;
+    }
+}
+
+@media(min-width:1200px){
+    body{
+        font-size: 20px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .menu {
-
 background-color: white;
-
+position: fixed;
+width: 100vw;
+top: 0;
+z-index: 1;
 }
-
 
 .menu ul{
     display: flex;
@@ -20,6 +56,18 @@ background-color: white;
 .menu li{
     list-style: none;
 }
+.menu a {
+    display: block;
+    padding: 10px 20px;   
+    transition: 2s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: teal;
+    color:white;
+}
+ 
 
 a {
     color: teal;
@@ -30,27 +78,131 @@ a:hover {
     text-decoration: underline;
 }
 
-.site-title, .site-subtitle {
+
+.site-title,
+.site-subtitle {
     color: whitesmoke;
     text-align: center;
 }
 
+.site-title{
+    font-size: 3em;
+    font-family:'Roboto', sans-serif;
+    
+}
+
 .site-subtitle {
     font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8em;
+}
+.sobre h2 {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
 }
 
-.image {
-    display: block;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+.sobre p{
+    color: white;
+    text-indent: 1.4em;
+    margin-bottom: 1.4em;
+    box-sizing: border-box 14px;
+    text-align: justify;    
+}
+
+.sobre a{
+    color: white;
+    text-decoration: underline;
+}
+
+.sobre a:hover{
+    background-color: cyan;
+    text-decoration: none;
+    color: rgb(31, 175, 31);
+}
+.sobre li {
+    color: white;
+    text-indent: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sobre,
+.contato,
+.portfolio{
+    padding: 2em;
+    min-height: 100vh;   
+}
+
+@media (win-width:1200px){
+    .container {            
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}
+
+.sobre h2,
+.contato h2,
+.portfolio h2{
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.portfolio .grid {
+    display:grid;
+    gap: 3em;
+    height: 40vh;
+}
+
+@media(min-width: 560px){
+    .portfolio .grid {
+        display:grid;
+        grid-template-columns: 240px 240px ;
+    }
+}
+
+@media(min-width: 880px){
+    .portfolio .grid {
+        grid-template-columns: repeat(3, 260px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+.portfolio figure {
+    text-align: center;
 
 }
 
-.description {   
-    color:whitesmoke;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    padding: 50px;
-    text-align: center, justify;  
+.img-portfolio {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    object-fit:left bottom;
+    border-radius: 2px;
+    transition: transform 500ms;
 }
+
+.img-portfolio:hover {
+    transform: scale(1.2) rotate(1.2deg);
+}
+
+.contato .icons {
+    text-align:center;
+}
+.contato a{
+    color: whitesmoke;
+    font-size: 4em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px  blue; /*faltou o valor alpha para testar*/
+}
+
