@@ -6,9 +6,10 @@
     <title>Hussyvel Software Engineer</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/perfil.jpeg" type="image/x-icon">    
     <script src="https://kit.fontawesome.com/7a61932a3b.js" crossorigin="anonymous"></script>
-
 
 </head>
 
@@ -16,95 +17,91 @@
     <header>
         <nav class="menu">
             <ul class="container">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="titulo">
-            <h1 class="site-title"> Hussyvel Ribeiro - Software Engineer</h1>
-            <h2 class="site-subtitle">Developer Java, javaScript, Ruby and SQL</h2>
+            <h1 class="site-title"> Hi, my name is Hussyvel, i am Software Engineer. Welcome ;)</h1>
+            <h2 class="site-subtitle"></h2>
        </div>
     </header>
      
     <section class="sobre container">
         <h2>Sobre</h2>
 
-        <figure>
-            <img src="img/perfil.jpeg" alt="Hussyvel Ribeiro">
+        <figure class="avatar">
+            <img src="img/hussymascote3.png" height="300px" width="200px"  alt="Hussyvel Ribeiro">
         </figure>
 
-        <p>
+        <p class="text">
             I have a Bachelor's degree in Information Systems from FACIMP, Software Engineer Java, JavaScript, Sql for postgresql and mysql relational banks. I use Linux Ubuntu as operating system, git for version control, Trello for task management, Pomodoro to manage my time (theory and practice), Github for Open Source and English projects with Duolingo and by SEDA COLLEGE.
-        </p>
-        <ul>
-            <li>
-            Youtube channel showing Projects: https://www.youtube.com/watch?v=HDCePmkhKkc&list=UUuwfPFXsuLuzwBxlnCMpRNw
-            </li>
-            <li>
-            
-            Front end: HTML5, CSS 3 and JavaScript / Reactjs;
-            </li>
-            <li>
-            Back-end: Nodejs / Java;
-            </li>
-            <li>
-            Database: SQL (Mysql, Postgresql);
-            </li>
-            <li>
-            Operating system: Linux Ubuntu;
-            </li>
-            <li>
+            Youtube channel showing Projects: https://www.youtube.com/watch?v=HDCePmkhKkc&list=UUuwfPFXsuLuzwBxlnCMpRNw;
+            Front-end: HTML5, CSS 3 and JavaScript pure; Back-end:Java and Ruby on Rails (basic);  Database: SQL (Mysql, Postgresql); 
+            Operating system: Linux Ubuntu; 
             Version control: Git;
-            </li>
-            <li>
-            Trello;
-            </li>
-            <br>
-            <br>
-            <br>
-            <a href="https://cursos.alura.com.br/user/hussyribeiro">Certifications and courses at Alura</a> 
-        </ul>
+            <a href="https://cursos.alura.com.br/user/hussyribeiro">Certifications and courses at Alura</a>
+            <br> 
+            <audio controls class="audio" autoplay class="audio">
+                <source src="img/cenafinamatrix.mp3" type="audio/mpeg">
+            </audio>
+        </p>
     </section>
     
-    
-
     <section class="portfolio container" id="portfolio" >
         <h2>Projetos</h2>
         
-        <div class="grid">
+        <div class="grid figcaption">
             <figure>
-                <img class="img-portfolio" src="img/java.png" alt="language java">  
+                <a href="https://cursos.alura.com.br/user/hussyribeiro" target="_blank"><img class="img-portfolio" src="img/alura1.png" alt="Alura Cursos Online"></a>  
+                <figcaption>Alura Cursos Online </figcaption>
+             </figure>
+
+            <figure>
+               <a href="https://github.com/hussyvel/java" target="_blank"><img class="img-portfolio" src="img/java.png" alt="language java Oracle"></a>  
                 <figcaption>Java</figcaption>
             </figure>
 
             <figure>
-                <img class="img-portfolio" src="img/javaScript.png" alt="language javaScript">
+               <a href="https://www.youtube.com/channel/UCuwfPFXsuLuzwBxlnCMpRNw/playlists?view_as=subscriber" target="_blank"><img class="img-portfolio" src="img/javascript.png" alt="language javaScript"></a>
                 <figcaption>JavaScript</figcaption>
             </figure>
 
             <figure>
-                
-                <img class="img-portfolio" src="img/sql.jpg" alt="language SQL">
+                <a href="http://www.hackerearth.com/pt-br/@hussyribeiro" target="_blank"><img class="img-portfolio" src="img/hackerearth.jpg" alt="hackerearth"></a>
+                <figcaption>hackerearth</figcaption>
+            </figure>       
+            
+            <figure>
+                <a href="https://github.com/hussyvel/ruby" target="_blank"><img class="img-portfolio" src="img/rubydevmedia.png" alt="language Ruby"></a>    
+                 <figcaption class="rubyonrails">Ruby on Rails</figcaption>
+             </figure>
+
+             <figure>
+                <a href="https://www.freecodecamp.org/hussy" target="_blank"><img class="img-portfolio" src="img/freecodecamp.png" alt="Plataforma freecodecamp"></a>
+                <figcaption>freecodecamp</figcaption>
+            </figure>
+
+
+            <figure>
+                <a href="https://www.hackerrank.com/hussyribeiro1" target="_blank"><img class="img-portfolio" src="img/hackerrank.jpg" alt="Hackerrank"></a>
+                <figcaption>Hackerrank</figcaption>
+            </figure>
+
+            <figure>
+                <a href="https://cursos.alura.com.br/user/hussyribeiro/course/introducao-a-banco-de-dados-e-sql/certificate" target="_blank"> <img class="img-portfolio" src="img/sql.jpg" alt="language SQL"></a>
                 <figcaption>SQL</figcaption>
             </figure>
 
             <figure>
-                
-                <img class="img-portfolio" src="img/github.png" alt="Version control">
-                <figcaption>Github</figcaption>
+                <a href="https://scrimba.com/@hussyvel" target="_blank"><img class="img-portfolio" src="img/scrimba.jpg" alt="Scrimba"></a>
+                <figcaption>Scrimba</figcaption>
             </figure>
-
-            <figure>
-                <img class="img-portfolio" src="img/ruby.png" alt="language Ruby">    
-                <figcaption>Ruby</figcaption>
-            </figure>
-            
-            
         </div>
+        <p>Empresas das quais pertencem as imagens: Tectudo, Scrimba, Alura, Freecodecamp, Hackerrank, hackerearth, Devmedia, Mirror,   </p>
+        
     </section>
-
-    
 
     <section class="contato container" id="contato">
         
@@ -129,6 +126,10 @@
             </a>
         </div>
     </section>
+    <footer class="p">
+        <p>Copyright &copy; Hussyvel Ribeiro 2020</p>
+    </footer>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>
 

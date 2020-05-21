@@ -13,8 +13,15 @@ body{
     font-size: 12px;
 }
 
+.audio{  
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+}
+
 /*se a tela tiver pelo menos 400px vai carregar esses estilos*/
-@media(min-width: 400px){
+@media (min-width: 400px){
     body {
         font-size: 14px;
     }
@@ -22,6 +29,8 @@ body{
 
 @media(min-width: 600px){
     body {
+        background-attachment: fixed;
+        background-size: cover;
         font-size: 18px;
     }
 }
@@ -81,20 +90,49 @@ a:hover {
 
 .site-title,
 .site-subtitle {
-    color: whitesmoke;
+    color: white;
     text-align: center;
 }
 
 .site-title{
     font-size: 3em;
-    font-family:'Roboto', sans-serif;
-    
+    font-family: 'Special Elite', cursive;
+
 }
+
+
+.site-subtitle,
+.site-title::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+
 
 .site-subtitle {
     font-style: italic;
     font-family: 'Roboto', sans-serif;
     line-height: 1.8em;
+}
+
+.figcaption{
+    color: white;
+}
+.text {
+    text-align: justify;
+    line-height: 40px;
+    width: 100%;
+    
 }
 .sobre h2 {
     font-family: 'Roboto', sans-serif;
@@ -116,11 +154,14 @@ a:hover {
     text-decoration: underline;
 }
 
-.sobre a:hover{
-    background-color: cyan;
-    text-decoration: none;
-    color: rgb(31, 175, 31);
+
+.sobre .avatar{
+    float: left;
+    margin-right: 2em;
+    border-radius: 50%;
+    clip-path: circle(70.7% at 50% 50%); /*https://bennettfeely.com/clippy/ */ 
 }
+
 .sobre li {
     color: white;
     text-indent: 2em;
@@ -131,7 +172,7 @@ a:hover {
 .contato,
 .portfolio{
     padding: 2em;
-    min-height: 100vh;   
+    min-height: 80vh;   
 }
 
 @media (win-width:1200px){
@@ -146,15 +187,20 @@ a:hover {
 .contato h2,
 .portfolio h2{
     font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
+    color: white;
     margin-bottom: 1.5em;
     font-size: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
 .portfolio .grid {
+
     display:grid;
     gap: 3em;
-    height: 40vh;
 }
 
 @media(min-width: 560px){
@@ -167,9 +213,11 @@ a:hover {
 @media(min-width: 880px){
     .portfolio .grid {
         grid-template-columns: repeat(3, 260px);
+        grid-template-rows: repeat(3, 260px);
         align-content: center;
         justify-content: center;
-        height: calc(100vh - 8em - 48px);
+        
+       /* height: calc(100vh - 8em - 48px); */
     }
 }
 
@@ -179,23 +227,24 @@ a:hover {
 }
 
 .img-portfolio {
-    height: 200px;
-    width: 300px;
+    height: 180px;
+    width: 100%;
     object-fit: cover;
     object-fit:left bottom;
-    border-radius: 2px;
+    border-radius: 3px;
     transition: transform 500ms;
 }
 
 .img-portfolio:hover {
-    transform: scale(1.2) rotate(1.2deg);
+    transform: scale(1.2) rotate(-2deg);
 }
 
 .contato .icons {
     text-align:center;
+
 }
-.contato a{
-    color: whitesmoke;
+.contato a {
+    color: white;
     font-size: 4em;
     transition: text-shadow 1s;
 }
@@ -206,3 +255,8 @@ a:hover {
     text-shadow: 0px 0px 10px  blue; /*faltou o valor alpha para testar*/
 }
 
+.p {
+    color: white;
+    text-align: center;
+    height:100px;   
+}
