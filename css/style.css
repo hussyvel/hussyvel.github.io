@@ -272,7 +272,7 @@ a:hover {
 }
 
 .list li{
-    display: inline-block;
+    display: inline-flex;
     font-size: 20px;
     text-align: center;
     width: 30%;
@@ -284,7 +284,7 @@ a:hover {
 }
 
 .titulo_blogs{
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     text-align: center;
     padding: 10px;
