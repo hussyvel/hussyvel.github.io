@@ -62,6 +62,7 @@ z-index: 1;
 .menu ul{
     display: flex;
     justify-content: space-around;
+    margin: 0 30px;
 }
 
 .menu li{
