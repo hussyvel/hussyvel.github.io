@@ -212,6 +212,11 @@ a:hover {
        text-align: center;
        display: grid;
    }
+   .menu ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+}
 }
 
 @media(min-width: 880px){
