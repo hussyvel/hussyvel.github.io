@@ -13,6 +13,8 @@ body{
     font-size: 12px;
 }
 
+
+
 .audio{  
    
     margin-left: auto;
@@ -132,7 +134,7 @@ a:hover {
     
 }
 .sobre h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Special Elite', cursive;
     color: whitesmoke;
     margin-bottom: 1.5em;
     font-size: 2em;
@@ -162,7 +164,7 @@ a:hover {
 .sobre li {
     color: white;
     text-indent: 2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Special Elite', cursive;
 }
 
 .aprender,
@@ -184,7 +186,7 @@ a:hover {
 .sobre h2,
 .contato h2,
 .portfolio h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Special Elite', cursive;
     color: white;
     margin-bottom: 1.5em;
     font-size: 2em;
@@ -206,6 +208,10 @@ a:hover {
         display:grid;
         grid-template-columns: 240px 240px ;
     }
+   .list div {
+       text-align: center;
+       display: grid;
+   }
 }
 
 @media(min-width: 880px){
@@ -238,11 +244,11 @@ a:hover {
 }
 
 .aprender{
-    display: flex;
+    display: block;
     justify-content: space-around;
     height: 100%;
-    padding: 2em;
-    min-height: 80vh;   
+    padding: 80px; /*2em*/
+    min-height: 40vh; /*80vh*/   
 }
 
 .empresas {
@@ -271,16 +277,18 @@ a:hover {
     height:100px;   
 }
 
-.list li{
-    display: inline-flex;
+.list div{
+    display: inline-block;
     font-size: 20px;
     text-align: center;
-    width: 30%;
+    width: 100%;
 	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
+	margin: 2px 0px 18px;
+	padding: 16px 0px;
     box-sizing: border-box;
-    border: 2px solid white;
+    border: 1px solid white;
+    color: white;
+    list-style: none;
 }
 
 .titulo_blogs{
