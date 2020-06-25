@@ -209,9 +209,16 @@ a:hover {
 @media(min-width: 400px){
     .portfolio .grid {
         display:grid;
-        grid-template-columns: 240px 240px ;
+        grid-template-columns: 240px;
+        margin: 0 auto;
+        width: 70%;
+       
+    
     }
-   .list div {
+    .menu a {
+        padding: 10px 10px;
+    }
+   /*.list div {
        text-align: center;
        display: grid;
    }
@@ -226,13 +233,14 @@ a:hover {
         transition: 2s;
     }
 }
-
+*/
 @media(min-width: 560px){
     .portfolio .grid {
         display:grid;
         grid-template-columns: 240px 240px ;
+        align-content: center;
     }
-   .list div {
+  /* .list div {
        text-align: center;
        display: grid;
    }
@@ -241,6 +249,7 @@ a:hover {
     justify-content: space-around;
     margin: 0 30px;
     }
+    */
 }
 
 @media(min-width: 880px){
