@@ -25,7 +25,12 @@ body{
 /*se a tela tiver pelo menos 400px vai carregar esses estilos*/
 @media (min-width: 400px){
     body {
+        display: inline-block;
         font-size: 12px;
+        
+    }
+    .menu a {
+       padding: 10px 10px;
     }
 }
 
@@ -71,7 +76,7 @@ z-index: 1;
 
 .menu a {
     display: block;
-    padding: 10px 20px;   
+    padding: 10px 10px;   
     transition: 2s;
 }
 
@@ -175,7 +180,7 @@ a:hover {
     padding: 2em;
     min-height: 80vh;   
 }
-
+/*
 @media (win-width:1200px){
     .container {            
         margin-left: auto;
@@ -183,7 +188,7 @@ a:hover {
         max-width: 1200px;
     }
 }
-
+*/
 .sobre h2,
 .contato h2,
 .portfolio h2{
@@ -203,7 +208,7 @@ a:hover {
     gap: 3em;
 }
 
-
+/*
 
 @media(min-width: 400px){
     .portfolio .grid {
@@ -228,7 +233,6 @@ a:hover {
         display: block;
         padding: 16px 10px;   
         transition: 2s;
-       
     }
 }
 
@@ -264,10 +268,10 @@ a:hover {
         align-content: center;
         justify-content: center;
         
-       /* height: calc(100vh - 8em - 48px); */
+       
     }
 }
-
+*/
 .portfolio figure {
     text-align: center;
 
