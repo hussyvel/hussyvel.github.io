@@ -25,7 +25,7 @@ body{
 /*se a tela tiver pelo menos 400px vai carregar esses estilos*/
 @media (min-width: 400px){
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
