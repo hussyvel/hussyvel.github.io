@@ -199,7 +199,6 @@ a:hover {
 
 
 .portfolio .grid {
-
     display:grid;
     gap: 3em;
 }
@@ -212,42 +211,48 @@ a:hover {
         grid-template-columns: 240px;
         margin: 0 auto;
         width: 70%;
-       
-    
     }
-    .menu a {
-        padding: 10px 10px;
-    }
+
    .list div {
        text-align: center;
        display: grid;
    }
+
    .menu ul{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 30px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 30px;
     }
+
     .menu a {
         display: block;
         padding: 16px 10px;   
         transition: 2s;
+       
     }
 }
 
 @media(min-width: 560px){
     .portfolio .grid {
         display:grid;
-        grid-template-columns: 240px 240px ;
-        align-content: center;
+        grid-template-columns: 240px;
+        width: 50%;
     }
-  .list div {
+
+    .list div {
        text-align: center;
        display: grid;
-   }
-   .menu ul{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 30px;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 30px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 16px 10px;   
+        transition: 2s;
     }
 
 }
