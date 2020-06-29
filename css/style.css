@@ -10,10 +10,14 @@ body{
     background-size: auto 100vh;
     font-family: 'Special Elite', cursive;
     height: 100vh;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-
+ figure img{
+    border: 2px;
+    padding: 10px;
+    border-radius: 100%;
+}
 
 .audio{  
    
@@ -23,6 +27,7 @@ body{
 }
 
 /*se a tela tiver pelo menos 400px vai carregar esses estilos*/
+/*
 @media (min-width: 400px){
     body {
         display: inline-block;
@@ -47,6 +52,8 @@ body{
         font-size: 20px;
     }
 }
+
+*/
 
 header {
     height: 100vh;
@@ -180,15 +187,9 @@ a:hover {
     padding: 2em;
     min-height: 80vh;   
 }
-/*
-@media (win-width:1200px){
-    .container {            
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1200px;
-    }
-}
-*/
+
+
+
 .sobre h2,
 .contato h2,
 .portfolio h2{
@@ -208,7 +209,7 @@ a:hover {
     gap: 3em;
 }
 
-/*
+
 
 @media(min-width: 400px){
     .portfolio .grid {
@@ -271,7 +272,18 @@ a:hover {
        
     }
 }
-*/
+@media (win-width:1200px){
+    .container {            
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+    figure img {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+}
 .portfolio figure {
     text-align: center;
 
