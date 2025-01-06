@@ -1,440 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Academy Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>   
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: "Martel", sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #F5EEE3;
+        }
 
-  <title>Hussyvel - Software Engineer</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+        .hero {
+           /*background-color: #370707;
+           background-image: url(img/cavalo1.mp4); */
+            position: relative;
+            color: white;
+            padding: 50px 20px;
+            display: flex;
+            font-family: "Martel", sans-serif;
+            align-items: center;
+            height: 90vh;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
 
-  <!-- Favicons -->
-  <link href="assets/img/perfilgithub.jpeg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)); /* Gradiente para o overlay */
+            z-index: -1; /* Fica atrás do conteúdo, mas na frente do vídeo */
+        }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0.7;
+        }
 
-  <link href="assets/css/style.css" rel="stylesheet">
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 150px;
+            height: 10px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+            font-style: normal;
+            color: #ffffff;
+        }
 
- 
-</head>
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 150px;
+            height: 0px;
+            color: #ffffff;
+            font-weight: 900;
+            font-style: normal;
+        }
 
-<body>
+        .hero-content img {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            opacity: 0.5;
+        }
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Hussyvel</a></h1>
-     
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-color:black;">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-        </div>
-
-        <div class="titulo container">  
-            <h1 class="site-title">Hello, my name is Hussyvel R. Silva, i am Software Engineer Experienced innovative web development solutions.</h1>
-            <h2 class="site-subtitle"></h2>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="./assets/img/perfil.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Hussyvel Ribeiro da Silva</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Software Engineer</span></p>
-                        <p><span class="title-s">Email: </span> <span>hussyribeiro@hotmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>55+ (99)98152-2892 </span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>Java</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JavaScript (React and Nodejs)</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS (Bootstrap and Tailwind)</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>SQL (PostgreSQL and PLSQL)</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      I am a Full Stack developer with a strong background in essential technologies for web application and system development.
-                      My passion lies in creating innovative and high-performance solutions, and I stay up-to-date with the latest industry trends and best practices. My skills encompass Java Spring Boot, JavaScript (Node.js, Vue.js, and React.js), ORACLE (PL/SQL), and PostgreSQL.
-                      Below, you will find a summary of the technologies I am proficient in.
-                    </p>
-                    <p class="lead">
-
-                      Java Spring Boot:
-
-                      Advanced experience in developing web applications using the Java Spring Boot framework.
-                      Proficient in dependency injection, MVC (Model-View-Controller) architecture, JPA (Java Persistence API), and security.
-                      Familiarity with building RESTful APIs and integrating services.
-                      https://github.com/hussyvel/javase
-                      https://github.com/hussyvel/java
-                    </p>
-                    <p class="lead">
-                      JavaScript (Node.js, Vue.js, and React.js):
-
-                      Strong knowledge of JavaScript, including the use of ECMAScript 6 (ES6) and beyond.
-                      Experience in backend development with Node.js, building APIs, and implementing business logic.
-                      Proficient in front-end frameworks like Vue.js and React.js to create interactive and responsive interfaces.
-                      Knowledge of popular libraries like Axios and Redux for state management and server communication.
-                      
-                      https://github.com/hussyvel/Api_rest_cep
-                      https://github.com/hussyvel/maratona-dev-hussyvel
-                      https://github.com/hussyvel/Javascript
-                    </p>
-                   
-                    <p class="lead">
-                      PostgreSQL:
-
-                      Competency in using PostgreSQL, including table creation, SQL querying, and query optimization.
-                   
-                      Version Control: Git;
-
-                      S.O.: Linux Ubuntu and windows;
-
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                As a Full Stack developer, I possess extensive experience in several key technologies for web application and system development. My combination of skills in Java Spring Boot, JavaScript (Node.js, Vue.js, and React.js), ORACLE (PL/SQL), and PostgreSQL allows me to deliver robust and high-quality solutions. I am always seeking new challenges and have a passion for learning and applying best practices to deliver exceptional results. I am excited to contribute to innovative projects and be part of a talented and results-driven team.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
+        .cta-button {
+            background-color: #54a44c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 150px;
         
-    </section><!-- End Services Section -->
+        }
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">AWARD WON</span>
-              </div>
-            </div>
-          </div>
+        .cta-button:hover {
+            background-color: #18712d;
+        }
+
+        .countdown {
+            font-size: 1.2em;
+            margin-top: 1px;
+            margin-bottom: 5px;
+            
+        }
+
+        .cor-topo {
+            background-color: #FB9861;
+            color: black;
+            padding: 10px 20px;
+            font: sans-serif;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        footer {
+            background-color: #F5EEE3;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            margin-bottom: 20px;
+        }
+
+        footer .cta-button {
+            background-color: #28a745;
+        }
+
+        footer .cta-button:hover {
+            background-color: #218838;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .image-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .image-text img {
+            max-width: 150px;
+            border: 2px solid #370707;
+            border-radius: 10px;
+        }
+
+        .image-text p {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .image-text-large img {
+            max-width: 250px;
+            border: 2px solid #370707;
+            border-radius: 10px;
+        }
+
+        .image-text-large p {
+            max-width: 600px;
+            text-align: left;
+        }
+
+
+        .about {
+        text-align: center;
+        margin: 40px auto;
+        max-width: 1200px;
+        padding: 20px;
+        }
+
+    .about h2 {
+        font-size: 2rem;
+        margin-bottom: 100px;
+        color: #333;
+    }
+
+    .image-text-large {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .box {
+        border: 2px solid #370707;
+        border-radius: 8px;
+        padding: 15px;
+        width: 45%;
+        box-shadow: 0 4px 8px #370707;
+    }
+
+    .box img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .box p {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 24px;
+        margin-right: 24px;
+        text-align: justify;
+
+    }
+
+    .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garante que o vídeo preencha o container */
+        }
+
+        .video-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+            pointer-events: none; /* Não interfere na interação com o vídeo */
+        }
+
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .image-text-large {
+            flex-direction: column;
+        }
+
+        .box {
+            width: 90%;
+        }
+
+        .about h2 {
+            font-size: 1.8rem;
+        }
+
+        .box p {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .about {
+            padding: 15px;
+        }
+
+        .about h2 {
+            font-size: 1.5rem;
+        }
+
+        .box {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .about h2 {
+            font-size: 1.2rem;
+        }
+
+        .box {
+            padding: 8px;
+        }
+
+        .box p {
+            font-size: 12px;
+            line-height: 1.3;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .image-text-large {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .box {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .about h2 {
+            font-size: 1.6rem;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Countdown Timer -->
+    <div class="cor-topo">
+        <div class="countdown" id="countdown">Transforme sua experiência incrível com a <strong>“Horse Academy”! </strong> Faltam apenas <span id="days">0</span> dias, <span id="hours">0</span> horas, <span id="minutes">0</span> minutos, <span id="seconds">0</span> segundos.</div>
+    </div>
+
+  
+    <!-- Hero Section -->
+    <header class="hero">
+        <video autoplay muted loop>
+             <source src="img/cavalo1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <!-- <img src="img/sublogo4.png" alt="Horse Academy Experience"> -->
+            <h1>TRANSFORME SUA <span style="color: #FB9861;">PAIXÃO</span> POR EQUINOS<br> EM UMA CARREIRA DE SUCESSO NA <br> <span style="color: #FB9861;"> HORSE ACADEMY EXPERIENCE! </span> 🌟</h1>
+            <hr style="border: 1px solid #FB9861; width: 100%; margin: 20px auto;">
+            <p>Participe do evento presencial que combina aprendizado prático e inspiração,<br> com especialistas renomados em nutrição, manejo, bem-estar <br> e desenvolvimento profissional.</p>
+            <button class="cta-button">Garanta já sua vaga!</button>
         </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Github Project Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Projects carried out using technologies such as java, reactjs, vuejs, plsql, ruby on rails.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/reactjs.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <a href="https://github.com/hussyvel/Javascript"><img src="assets/img/reactjs.jpeg" alt="" class="img-fluid"></a>
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Reactjs</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/nodejs-dark.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <a href="https://github.com/hussyvel/Javascript"><img src="assets/img/nodejs-dark.png" alt="" class="img-fluid"></a>
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Nodejs</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"><span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/Java-Logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <a href="https://github.com/hussyvel/ruby"><img src="assets/img/Java-Logo.png" alt="" class="img-fluid"></a>
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Java</h2>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-    </section><!-- End Portfolio Section -->
-
+    </header>
 
     
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        If you want, you can send me a message about work, hobbies, music, programming and games.
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> </li>
-                        <li><span class="bi bi-phone"></span> +55 (99) 98152-2892</li>
-                        <li><span class="bi bi-envelope"></span> hussyribeiro@hotmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- Sobre o Evento -->
+    <section class="about">
+        <h2>Por que participar do Horse Academy Experience?</h2>
+        <div class="image-text-large">
+            <div class="box">
+                <img src="https://equarter.com.br/wp-content/uploads/2024/04/img-xm-conteudo-exculsivo.webp" alt="Imagem do evento Horse Academy Experience">
             </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Hussyvel</strong>. All Rights Reserved</p>
-            <div class="credits">
-
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <div class="box">
+                <p>
+                    O Horse Academy Experience é mais do que um evento. É uma imersão no universo dos equinos, projetada para estudantes e profissionais que desejam se destacar no mercado. Durante dois dias intensos, você aprenderá com palestrantes de referência, participará de práticas exclusivas e descobrirá como construir uma carreira confiante e bem-sucedida no mundo da medicina veterinária e zootecnia.
+                </p>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+    </section>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Localização e Estrutura -->
+    <section class="location">
+        <h2>Onde e Quando?</h2>
+        <p>O evento acontecerá em Imperatriz, Maranhão, combinando teoria e prática em locais excepcionais:</p>
+        <ul>
+            <li><strong>Palestras:</strong> Hotel Stay In</li>
+            <li><strong>Prática:</strong> Haras Hotbell</li>
+            <li><strong>Datas:</strong> [Inserir datas específicas]</li>
+        </ul>
+        <button class="cta-button">Reserve sua vaga agora!</button>
+    </section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Temas e Palestrantes -->
+    <section class="topics">
+        <h2>Temas que farão a diferença na sua carreira</h2>
+        <ul>
+            <li>Nutrição de Equinos: Estratégias modernas e práticas.</li>
+            <li>Manejo Eficiente: Técnicas que garantem o bem-estar dos animais.</li>
+            <li>Bem-Estar Animal: Abordagens éticas e científicas.</li>
+            <li>Desenvolvimento Profissional: Como construir uma carreira de sucesso no mercado de equinos.</li>
+        </ul>
+        <h3>Palestrantes Confirmados:</h3>
+        <div class="speakers">
+            <!-- Adicione fotos e biografias aqui -->
+        </div>
+    </section>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Benefícios de Participar -->
+    <section class="benefits">
+        <h2>O que você ganhará com esta experiência?</h2>
+        <ul>
+            <li>Acesso a conteúdos inéditos e práticos.</li>
+            <li>Certificado de participação, valorizando seu currículo.</li>
+            <li>Networking com profissionais e estudantes apaixonados pela área.</li>
+            <li>Ferramentas para impulsionar sua confiança e credibilidade no mercado.</li>
+        </ul>
+    </section>
 
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <h2>Quem já participou de experiências como essa, recomenda!</h2>
+        <div class="testimonials-content">
+            <!-- Espaço para vídeos ou textos de depoimentos -->
+        </div>
+    </section>
+
+    <!-- Inscrição -->
+    <section class="registration">
+        <h2>Invista no seu futuro agora!</h2>
+        <p>Garanta sua vaga por um valor especial de lançamento: [Inserir valor]</p>
+        <p>[Inserir informações de parcelamento, descontos para grupos ou bônus]</p>
+        <button class="cta-button">Quero me inscrever!</button>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Tem dúvidas? Nós temos as respostas!</h2>
+        <ul>
+            <li><strong>Como faço para me inscrever?</strong> [Resposta]</li>
+            <li><strong>Qual o público-alvo do evento?</strong> [Resposta]</li>
+            <li><strong>Preciso ter experiência prévia na área?</strong> [Resposta]</li>
+            <li><strong>O evento oferece certificado?</strong> [Resposta]</li>
+        </ul>
+    </section>
+
+    <!-- Call to Action Final -->
+    <footer class="cta-final">
+        <h2>As vagas são limitadas!</h2>
+        <p>Não perca essa oportunidade única de transformar sua carreira e aprender com os melhores. Inscreva-se agora e dê o próximo passo rumo ao sucesso.</p>
+        <button class="cta-button">Garanta sua vaga agora!</button>
+    </footer>
+
+    <script>
+        const countdown = () => {
+            const eventDate = new Date("2025-01-31T00:00:00").getTime();
+            const now = new Date().getTime();
+            const difference = eventDate - now;
+
+            if (difference <= 0) {
+                document.getElementById("countdown").innerHTML = "O evento já começou!";
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        };
+
+        setInterval(countdown, 1000);
+    </script>
 </body>
 
-</html>
+
