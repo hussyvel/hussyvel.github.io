@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horse Academy Experience</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/hussyvel.github.io/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,6 @@
 
 
         .hero {
-           /*background-color: #370707;
-           background-image: url(img/cavalo1.mp4); */
             position: relative;
             color: white;
             padding: 50px 20px;
@@ -71,14 +69,14 @@
             line-height: 1.2;
             font-weight: 900;
             font-style: normal;
-            color: #ffffff;
+            color: #FB9861;
         }
 
         .hero-content p {
             font-size: 1.2em;
             margin-bottom: 150px;
             height: 0px;
-            color: #ffffff;
+            color: #FB9861;
             font-weight: 900;
             font-style: normal;
         }
@@ -89,6 +87,16 @@
             display: block;
             margin: 0 auto 20px;
             opacity: 0.5;
+        }
+
+        .hero-divider {
+            margin-top: 24px;
+            margin-bottom: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 0.5;
+            border: 1px solid #FB9861;
+            width: 80%;
         }
         
 
@@ -109,7 +117,7 @@
             font-size: 1em;
             cursor: pointer;
             border-radius: 5px;
-            margin-bottom: 150px;
+            margin-bottom: 5px;
         
         }
 
@@ -132,7 +140,7 @@
         }
 
         section {
-            padding: 40px 20px;
+            padding: 10px 0;
         }
 
         footer {
@@ -140,6 +148,22 @@
             color: white;
             padding: 30px 20px;
         }
+
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 16px;
+        }
+
+
 
         footer p {
             margin-bottom: 20px;
@@ -162,7 +186,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 45px;
             margin: 40px 0;
         }
 
@@ -178,14 +202,21 @@
         }
 
         .image-text-large img {
-            max-width: 250px;
+            max-width: 350px;
             border: 2px solid #370707;
             border-radius: 10px;
+            margin-bottom: 10px;
         }
 
         .image-text-large p {
             max-width: 600px;
             text-align: left;
+            border-radius: 10px;
+            border: 0px solid #370707;
+            padding: 24px;
+            margin-top: 12px;
+            margin-bottom: 265px;
+            align-items: stretch;
         }
 
 
@@ -194,12 +225,15 @@
         margin: 40px auto;
         max-width: 1200px;
         padding: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
         }
 
         .about h2 {
             font-size: 2rem;
-            margin-bottom: 100px;
-            color: #333;
+            margin-bottom: 54px;
+            color: #AE6B46;
+            margin-top: 50px;
     }
 
     .image-text-large {
@@ -207,17 +241,43 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 24px;
+        margin-bottom: 1px;
+        margin-top: 10px;
     }
 
+    .location {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
+        .location .box {
+            
+            flex-direction: column;
+            height: 75vh;
+            width: 40%;
+            padding: 20px;
+            background-color: #F5EEE3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #370707;
+            text-align: center;
+            border: 2px solid #370707;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            margin-top: 24px;
+        }
 
     .box {
         border: 2px solid #370707;
         border-radius: 8px;
-        padding: 15px;
-        width: 45%;
+        padding: 5px;
+        width: 40%;
         box-shadow: 0 4px 8px #370707;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        align-items: stretch;
     }
 
     .box img {
@@ -228,15 +288,119 @@
 
     .box p {
         max-width: 100%;
-        height: auto;
         border-radius: 5px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 25px;
+        margin-bottom: 100px;
         margin-left: 24px;
         margin-right: 24px;
         text-align: justify;
+        padding: 10px;
+        color: #AE6B46;
 
     }
+
+    .box {
+        border: 2px solid #370707;
+        border-radius: 8px;
+        padding: 5px;
+        width: 40%;
+        box-shadow: 0 4px 8px #370707;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        align-items: stretch;
+    }
+
+    .location {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    .box h2 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
+    .lista {
+        list-style: none;
+    }
+
+    .topics {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Títulos centralizados e destacados */
+.topics h2, .topics h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #AE6B46; /* Azul escuro */
+}
+
+/* Estilo para o H2 (Título principal) */
+.topics h2 {
+    font-size: 2.5em; /* Tamanho grande para títulos principais */
+}
+
+/* Estilo para o H3 (Título secundário) */
+.topics h3 {
+    font-size: 1.8em; /* Tamanho um pouco menor */
+    margin-top: 30px;
+}
+
+/* Estilo para a lista de tópicos */
+.topics ul {
+    list-style-type: disc;
+    margin: 20px auto;
+    padding-left: 40px;
+    text-align: left; /* Alinha à esquerda para melhor leitura */
+}
+
+/* Estilo para itens da lista */
+.topics ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .topics {
+        padding: 10px;
+    }
+
+    .topics h2 {
+        font-size: 2em; /* Reduz tamanho do título principal */
+    }
+
+    .topics h3 {
+        font-size: 1.5em; /* Ajusta o tamanho do subtítulo */
+    }
+
+    .topics ul {
+        padding-left: 20px; /* Reduz margem da lista */
+    }
+}
+
+@media (max-width: 480px) {
+    .topics h2 {
+        font-size: 1.8em; /* Ajusta ainda mais para telas pequenas */
+    }
+
+    .topics h3 {
+        font-size: 1.3em;
+    }
+
+    .topics ul {
+        padding-left: 15px; /* Reduz espaço lateral */
+    }
+}
 
     .video-container {
             position: relative;
@@ -312,8 +476,8 @@
         }
 
         .hero-divider {
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 10px;
+            margin-bottom: 60px;
             line-height: 0.5;
             border: 1px solid #FB9861;
             width: 100%;
@@ -350,51 +514,34 @@
 
     @media (max-width: 520px) {
         .hero-content h1 {
-            font-size: 1.5rem;
-            line-height: 30px;
-            margin-bottom: 180px;
+            font-size: 1.3rem;
+            line-height: 1.4;
+            margin-bottom: 150px;
         }
 
         .hero-content p {
-            font-size: 1.0rem;
-            margin-bottom: 155px;
-            margin-top: 55px;
-        }
-
-        .hero-divider {
-            margin-top: 30px;
-            margin-bottom: 30px;
-            line-height: 0.5;
-            border: 1px solid #FB9861;
-            width: 100%;
+            font-size: 1rem;
+            margin: 20px 0 140px;
         }
 
         .cta-button {
-        padding: 8px 15px; /* Botão menor para telas menores */
-        font-size: 0.9em;
-        margin-bottom: 50px;
+            padding: 8px 12px;
+            font-size: 0.85em;
+            margin-bottom: 40px;
         }
 
-
-        .about {
-            padding: 15px;
-        }
-
-        .about h2 {
-            font-size: 1.5rem;
-        }
-
-        .box {
-            width: 100%;
-            padding: 10px;
+        .location .box {
+            width: 90%;
+            height: auto;
         }
 
         .box p {
-            margin-bottom: 150px;
-            font-size: 14px;
-            line-height: 1.4;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            text-align: justify;
         }
     }
+
 
     @media (max-width: 450px) {
         .image-text-large {
@@ -403,7 +550,7 @@
         }
 
         .box {
-            width: 100%;
+            width: 80%;
             padding: 10px;
         }
 
@@ -443,10 +590,10 @@
     
     <!-- Sobre o Evento -->
     <section class="about">
-        <h2>Por que participar do Horse Academy Experience?</h2>
+        <h2>POR QUE PARTICIPAR DO HORSE ACADEMY EXPERIENCE?</h2>
         <div class="image-text-large">
             <div class="box">
-                <img src="https://equarter.com.br/wp-content/uploads/2024/04/img-xm-conteudo-exculsivo.webp" alt="Imagem do evento Horse Academy Experience">
+                <img src="img/sublogo4.png" width="560px" height="447px">
             </div>
             <div class="box">
                 <p>
@@ -454,29 +601,40 @@
                 </p>
             </div>
         </div>
+        
     </section>
-
+    <hr class="hero-divider">
     <!-- Localização e Estrutura -->
-    <section class="location">
-        <h2>Onde e Quando?</h2>
-        <p>O evento acontecerá em Imperatriz, Maranhão, combinando teoria e prática em locais excepcionais:</p>
-        <ul>
-            <li><strong>Palestras:</strong> Hotel Stay In</li>
-            <li><strong>Prática:</strong> Haras Hotbell</li>
-            <li><strong>Datas:</strong> [Inserir datas específicas]</li>
-        </ul>
-        <button class="cta-button">Reserve sua vaga agora!</button>
+    <section class="about">
+
+        <div class="image-text-large">
+            <div class="box">
+                <img src="img/sublogo4.png" >
+            </div>
+            <div class="box">
+                <h2>ONDE E QUANDO?</h2>
+                <p>O evento acontecerá em Imperatriz, Maranhão, combinando teoria e prática em locais excepcionais:</p>
+                <ul class="lista">
+                        <li><strong>Palestras:</strong> Hotel Stay In</li>
+                        <li><strong>Prática:</strong> Haras Hotbell</li>
+                        <li><strong>Datas:</strong> [Inserir datas específicas]</li>
+                   </ul>
+            </div>
+            <button class="cta-button">RESERVE SUA VAGA AGORA!</button>
+        </div>
     </section>
 
     <!-- Temas e Palestrantes -->
     <section class="topics">
-        <h2>Temas que farão a diferença na sua carreira</h2>
+        <div class="content">
+        <h2>TEMAS QUE FARÃO A DIFERENÇA NA SUA CARREIRA</h2>
         <ul>
             <li>Nutrição de Equinos: Estratégias modernas e práticas.</li>
             <li>Manejo Eficiente: Técnicas que garantem o bem-estar dos animais.</li>
             <li>Bem-Estar Animal: Abordagens éticas e científicas.</li>
             <li>Desenvolvimento Profissional: Como construir uma carreira de sucesso no mercado de equinos.</li>
         </ul>
+        </div>
         <h3>Palestrantes Confirmados:</h3>
         <div class="speakers">
             <!-- Adicione fotos e biografias aqui -->
