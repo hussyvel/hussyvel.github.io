@@ -704,6 +704,7 @@
     font-size: 32px;
     color: #3A0B1B;
     margin-bottom: 20px;
+    margin-top: 60px;
     text-transform: uppercase;
 }
 
@@ -732,6 +733,7 @@
 .imagem-palestrante .box3 {
     max-width: 45%;
     text-align: left;
+    margin-top: 100px;
 }
 
 .imagem-palestrante .box3 h2 {
@@ -748,7 +750,7 @@
 }
 
 .course-card .cta-button:hover {
-            background-color: #3A0B1B;
+            background-color: #28a745;
             transform: scale(1.10);
         }
 
@@ -972,6 +974,42 @@ footer {
 
     }
 
+    @media (max-width: 430px) {
+        .image-text-large {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .box {
+            width: 80%;
+            padding: 10px;
+        }
+
+        .about h2 {
+            font-size: 1.6rem;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            background-color: #54a44c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        
+        }
+
+    }
+
+
 
   
     </style>
@@ -1105,6 +1143,7 @@ footer {
         </div>
         
     </section>
+    <hr class="hero-divider">
     <section class="palestrante3">
         <div class="imagem-palestrante">
             <div class="box2">
