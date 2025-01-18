@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações dos Cursos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .course-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        .course-card h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            font-size: 1em;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .course-card .price {
+            font-size: 1.8em;
+            color: #54a44c;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .course-card .cta-button {
+            display: inline-block;
+            background-color: #54a44c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .course-card .cta-button:hover {
+            background-color: #18712d;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Curso Individual Profissional -->
+        <div class="course-card">
+            <h2>Individual Profissional</h2>
+            <p>Aprenda e desenvolva habilidades profissionais com especialistas no assunto.</p>
+            <div class="price">R$600,00</div>
+            <a href="#" class="cta-button">Matricule-se</a>
+        </div>
+
+        <!-- Curso Individual Estudante -->
+        <div class="course-card">
+            <h2>Individual Estudante</h2>
+            <p>Ideal para estudantes que desejam ampliar seus conhecimentos.</p>
+            <div class="price">R$400,00</div>
+            <a href="#" class="cta-button">Matricule-se</a>
+        </div>
+
+        <!-- Ingresso Duplo -->
+        <div class="course-card">
+            <h2>Ingresso Duplo</h2>
+            <p>Você e um amigo podem participar juntos e economizar no ingresso.</p>
+            <div class="price">R$1.000,00 <br><small>(R$500,00 cada)</small></div>
+            <a href="#" class="cta-button">Matricule-se</a>
+        </div>
+    </div>
+</body>
+</html>

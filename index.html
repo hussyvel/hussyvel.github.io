@@ -21,6 +21,12 @@
     <script src="script.js"></script>
  
     <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
         body {
             font-family: "Martel", sans-serif;
             margin: 0;
@@ -55,7 +61,6 @@
             z-index: -1; /* Fica atrás do conteúdo, mas na frente do vídeo */
         }
 
-
         .hero video {
             position: absolute;
             top: 50%;
@@ -76,14 +81,14 @@
             line-height: 1.2;
             font-weight: 900;
             font-style: normal;
-            color: #FB9861;
+            color: white;
         }
 
         .hero-content p {
             font-size: 1.2em;
             margin-bottom: 150px;
             height: 0px;
-            color: #FB9861;
+            color: white;
             font-weight: 900;
             font-style: normal;
         }
@@ -97,12 +102,12 @@
         }
 
         .hero-divider {
-            margin-top: 24px;
-            margin-bottom: 40px;
+            margin-top: 100px;
+            margin-bottom: 100px;
             margin-left: auto;
             margin-right: auto;
             line-height: 0.5;
-            border: 1px solid #FB9861;
+            border: 1px solid #3A0B1B;
             width: 80%;
         }
         
@@ -120,7 +125,7 @@
             background-color: #54a44c;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 20px 20px;
             font-size: 1.5em;
             cursor: pointer;
             border-radius: 5px;
@@ -129,9 +134,26 @@
         
         }
 
+
         .cta-button:hover {
             background-color: #18712d;
             transform: scale(1.05);
+        }
+
+        .course-card .cta-button {
+            display: inline-block;
+            color: #9c8c58;
+            background-color: #9c8c58;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
         }
 
         .countdown {
@@ -142,11 +164,17 @@
         }
 
         .cor-topo {
-            background-color: #FB9861;
-            color: black;
+            background-color: #3A0B1B;
+            color: #9c8c58;
             padding: 10px 20px;
             font: sans-serif;
         }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
 
         section {
             padding: 10px 0;
@@ -183,6 +211,9 @@
 
         footer .cta-button {
             background-color: #28a745;
+            margin: 50px;
+            padding: 30px;
+            font-size: 1.5rem;
         }
 
         footer .cta-button:hover {
@@ -204,7 +235,7 @@
 
         .image-text img {
             max-width: 150px;
-            border: 2px solid #370707;
+            border: 2px solid #3A0B1B;
             border-radius: 10px;
         }
 
@@ -215,23 +246,12 @@
 
         .image-text-large img {
             width:100%;
-            height: 530px;
-            border: 2px solid #370707;
+            height: 450px;
+            border: 2px solid #3A0B1B;
             border-radius: 10px;
             margin-bottom: 10px;
             align-items: stretch;
         }
-
-        /* .image-text-large p {
-            max-width: 500px;
-            text-align: left;
-            border-radius: 10px;
-            border: 2px solid #370707;
-            padding: 24px;
-            margin-top: 12px;
-            margin-bottom: 227px;
-        } */
-
 
         .about {
         text-align: center;
@@ -239,13 +259,13 @@
         max-width: 1200px;
         padding: 20px;
         margin-bottom: 10px;
-        margin-top: 10px;
+        margin-top: 30px;
         }
 
         .about h2 {
             font-size: 32px;
             margin-bottom: 24px;
-            color: #AE6B46;
+            color: #3A0B1B;
             margin-top: 0px;
         }
 
@@ -275,20 +295,20 @@
             padding: 20px;
             background-color: #F5EEE3;
             border-radius: 10px;
-            box-shadow: 0 4px 8px #370707;
+            box-shadow: 0 4px 8px #3A0B1B;
             text-align: center;
-            border: 2px solid #370707;
+            border: 2px solid #3A0B1B;
             border-radius: 8px;
             margin-bottom: 24px;
             margin-top: 24px;
         }
 
     .box1 {
-        border: 2px solid #370707;
+        border: 2px solid #3A0B1B;
         border-radius: 8px;
         padding: 5px;
         width: 31%;
-        box-shadow: 0 4px 8px #370707;
+        box-shadow: 0 4px 8px #3A0B1B;
         margin-bottom: 24px;
         margin-top: 15px;
         align-items: stretch;
@@ -311,7 +331,7 @@
         margin-right: 24px;
         text-align: justify;
         padding: 10px;
-        color: #AE6B46;
+        color: #3A0B1B;
         align-items: stretch;
 
     }
@@ -326,7 +346,7 @@
         margin-right: 24px;
         text-align: left;
         padding: 10px;
-        color: #AE6B46;
+        color: #3A0B1B;
         align-items: stretch;
     }
 
@@ -353,10 +373,10 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #AE6B46;
+    color: #3A0B1B;
     background-color: #f9f5f1; /* Fundo suave */
     border-radius: 20px;
-    border: 2px solid #370707;
+    border: 2px solid #3A0B1B;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
 }
 
@@ -364,7 +384,7 @@
 .topics h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #370707;
+    color: #3A0B1B;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -384,146 +404,6 @@
     padding: 5px 0;
 }
 
-
-/*
-    .topics {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 855px;
-    text-align: center;
-    font-family: "Martel", sans-serif;
-    line-height: 1.6;
-    color: #AE6B46;
-    border-radius: 20px;
-    border: 2px solid #370707;
-    align-items: stretch;
-}
-
-
-/* Títulos centralizados e destacados */
-/*.topics h2, .topics h3 {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #AE6B46; /* Azul escuro */
-
-
-
-/* Estilo para o H2 (Título principal) */
-/*.topics h2 {
-    font-size: 2.5em; /*.topics {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 855px;
-    text-align: center;
-    font-family: "Martel", sans-serif;
-    line-height: 1.6;
-    color: #AE6B46;
-    background-color: #f9f5f1; /* Fundo suave */
-    /*border-radius: 20px;
-    border: 2px solid #370707;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
-
-
-/* Estilo para o título */
-/*.topics h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #370707;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-/* Estilo para a lista */
-/*.topics ul {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 0;
-    text-align: left; /* Alinha os itens à esquerda */
-  /*  margin: 0 auto;
-}
-
-.topics li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    padding: 5px 0;
-} Tamanho grande para títulos principais */
-
-
-/* Estilo para o H3 (Título secundário) */
-/*.topics h3 {
-    font-size: 1.8em; /* Tamanho um pouco menor */
-  /*  margin-top: 30px;
-}
-
-/* Estilo para a lista de tópicos */
-/*.topics ul {
-    list-style-type: disc;
-    margin: 20px auto;
-    font-size: 20px;
-    padding-left: 40px;
-    text-align: left; /* Alinha à esquerda para melhor leitura */
-
-
-/* Estilo para itens da lista */
-/*.topics ul li {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-/*
-.topics {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 855px;
-    text-align: center;
-    font-family: "Martel", sans-serif;
-    line-height: 1.6;
-    color: #AE6B46;
-    background-color: #f9f5f1; /* Fundo suave */
-/*    border-radius: 20px;
-    border: 2px solid #370707;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
-
-
-/* Estilo para o título */
-/*.topics h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #370707;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-/* Estilo para a lista */
-/*.topics ul {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 0;
-    text-align: left; /* Alinha os itens à esquerda */
-    /*margin: 0 auto;
-
-
-.topics li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    padding: 5px 0;
-}
-
-
-
-.topics {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 855px;
-    text-align: center;
-    font-family: "Martel", sans-serif;
-    line-height: 1.6;
-    color: #AE6B46;
-    background-color: #f9f5f1; /* Fundo suave */
-    /*border-radius: 20px;
-    border: 2px solid #370707;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
 
 
 /* Estilo para o título */
@@ -534,10 +414,10 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #AE6B46;
+    color: #3A0B1B;
     background-color: #f9f5f1; /* Fundo suave */
     border-radius: 20px;
-    border: 2px solid #370707;
+    border: 2px solid #3A0B1B;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
 }
 
@@ -545,7 +425,7 @@
 .topics h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #370707;
+    color: #3A0B1B;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -581,6 +461,63 @@
     margin-bottom: 10px;
     padding: 5px 0;
 }
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza os blocos horizontalmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+    flex-wrap: wrap; /* Permite que os blocos quebrem linha em telas menores */
+    margin: 20px;
+}
+
+.course-card {
+    background-color: #3A0B1B;
+    color: #9c8c58;
+    border-radius: 10px;
+    padding: 60px;
+    width: 400px; /* Define uma largura fixa para os blocos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0; /* Impede que os blocos diminuam em telas pequenas */
+    height: 600px;
+    margin-bottom: 30px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.course-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.course-card p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.course-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.course-card .cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #F5EEE3;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.course-card .cta-button:hover {
+    background-color: #3A0B1B;
+}
+
+
 
 
 /* Responsividade */
@@ -611,7 +548,7 @@
 @media (max-width: 480px) {
 
     .box1 {
-        width: 75%;
+        width: 90%;
     }
 
     .topics h2 {
@@ -634,7 +571,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #AE6B46;
+    color: #3A0B1B;
     }
 
     .testimonials {
@@ -644,7 +581,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #AE6B46;
+    color: #3A0B1B;
     }
 
     .registration {
@@ -654,7 +591,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #AE6B46;
+    color: #3A0B1B;
     }
 
 
@@ -665,7 +602,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #AE6B46;
+    color: #3A0B1B;
     }
 
     .faq {
@@ -678,7 +615,7 @@
 .faq h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #AE6B46;
+    color: #3A0B1B;
 }
 
 .question {
@@ -689,8 +626,8 @@
     width: 100%;
     text-align: left;
     background-color: #f4f4f4;
-    border: 2px solid #AE6B46;
-    padding: 15px 20px;
+    border: 2px solid #3A0B1B;
+    padding: 15px 180px;
     cursor: pointer;
     font-size: 18px;
     display: flex;
@@ -709,7 +646,7 @@
 .plus-icon {
     font-size: 24px;
     font-weight: bold;
-    color: #AE6B46;
+    color: #3A0B1B;
     margin-right: 10px;
     flex-shrink: 0; /* Prevents shrinking */
 }
@@ -718,7 +655,7 @@
     display: none;
     padding: 15px 20px;
     background-color: #fff;
-    border-left: 3px solid #AE6B46;
+    border-left: 3px solid #3A0B1B;
     border-radius: 0 0 5px 5px;
     margin-top: -2px; /* To avoid gaps */
 }
@@ -756,14 +693,16 @@
 
     /* Estilo para a seção de palestrantes */
 .palestrante {
-    padding: 40px 20px;
+    padding: 0px 20px;
     background-color: #F5EEE3;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .palestrante h2 {
     font-size: 32px;
-    color: #AE6B46;
+    color: #3A0B1B;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -777,12 +716,13 @@
     gap: 20px;
     margin: 40px auto;
     max-width: 1200px;
+    margin-bottom: 120px;
 }
 
 /* Dimensão personalizada da imagem */
 .imagem-palestrante .box2 img {
     width: 560px;
-    height: 447px;
+    height: auto;
     object-fit: cover; /* Ajusta o conteúdo da imagem para preencher o espaço */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
@@ -796,16 +736,21 @@
 
 .imagem-palestrante .box3 h2 {
     font-size: 32px;
-    color: #AE6B46;
+    color: #3A0B1B;
     margin-bottom: 10px;
 }
 
 .imagem-palestrante .box3 p {
     font-size: 20px;
     line-height: 1.6;
-    color: #AE6B46;
+    color: #3A0B1B;
     text-align: left;
 }
+
+.course-card .cta-button:hover {
+            background-color: #3A0B1B;
+            transform: scale(1.10);
+        }
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -825,6 +770,38 @@
 }
 
 
+footer {
+    color: #3A0B1B;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-family: "Martel", sans-serif;
+}
+
+.image-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o texto e a imagem */
+    margin: 20px 0;
+}
+
+.image-whatsapp img {
+    width: 56px; /* Define a largura pequena da imagem */
+    height: 56px; /* Define a altura proporcional */
+    cursor: pointer; /* Adiciona o ícone de "mão" ao passar o mouse */
+}
+
+.image-whatsapp p.whatsapp {
+    font-size: 1rem; /* Ajuste o tamanho do texto */
+    color: #3A0B1B;
+}
+
+
+.whatsapp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
     /* Responsividade */
 
@@ -850,7 +827,11 @@
             width: 90%;
         }
 
-
+        .cta-button {
+            padding: 30px 30px;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
 
         .about h2 {
             font-size: 1.8rem;
@@ -879,20 +860,20 @@
             margin-top: 10px;
             margin-bottom: 60px;
             line-height: 0.5;
-            border: 1px solid #FB9861;
+            border: 1px solid #370707;
             width: 100%;
         }
 
         .cta-button {
-        padding: 8px 15px; /* Botão menor para telas menores */
-        font-size: 0.9em;
-        margin-bottom: 50px;
+            padding: 30px 30px;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
         }
 
         .image-text-large .box{
             flex-direction: column;
             gap: 15px;
-            width: 80%;
+            width: 100%;
         }
 
         .about {
@@ -914,6 +895,8 @@
             line-height: 1.4;
         }
 
+        
+
  
     }
 
@@ -930,8 +913,8 @@
         }
 
         .cta-button {
-            padding: 8px 12px;
-            font-size: 0.85em;
+            padding: 30px 30px;
+            font-size: 1.5rem;
             margin-bottom: 40px;
         }
 
@@ -945,6 +928,12 @@
             font-size: 0.9rem;
             text-align: justify;
         }
+
+        .faq-question {
+            padding: 15px 105px;
+        }
+
+      
     }
 
 
@@ -967,8 +956,24 @@
             font-size: 14px;
             line-height: 1.4;
         }
+
+        .cta-button {
+            background-color: #54a44c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        
+        }
+
     }
 
+
+  
     </style>
 </head>
 <body>
@@ -985,7 +990,7 @@
         </video>
         <div class="hero-content">
             <!-- <img src="img/sublogo4.png" alt="Horse Academy Experience"> -->
-            <h1>TRANSFORME SUA <span style="color: #FB9861;">PAIXÃO</span> POR EQUINOS<br> EM UMA CARREIRA DE SUCESSO NA <br> <span style="color: #FB9861;"> HORSE ACADEMY EXPERIENCE! </span> 🌟</h1>
+            <h1>TRANSFORME SUA PAIXÃO POR EQUINOS<br> EM UMA CARREIRA DE SUCESSO NA <br> HORSE ACADEMY EXPERIENCE! </span> 🌟</h1>
             <hr class="hero-divider">
             <!--<hr class="hero-divider" style="border: 1px solid #FB9861; width: 100%; margin: 20px auto;">-->
             <p>Participe do evento presencial que combina aprendizado prático e inspiração,<br> com especialistas renomados em nutrição, manejo, bem-estar <br> e desenvolvimento profissional.</p>
@@ -999,7 +1004,7 @@
         <h2>POR QUE PARTICIPAR DO HORSE ACADEMY EXPERIENCE?</h2>
         <div class="image-text-large">
             <div class="box">
-                <img src="img/sublogo4.png" width="560px" height="447px">
+                <img src="img/logo.png" width="560px" height="447px">
             </div>
             <div class="box1">
                 <p>
@@ -1023,13 +1028,13 @@
                 <ul class="lista">
                         <li><strong>Palestras:</strong> Hotel Stay In</li>
                         <li><strong>Prática:</strong> Haras Hotbell</li>
-                        <li><strong>Datas:</strong> [Inserir datas específicas]</li>
+                        <li><strong>Datas:</strong> 21 e 23 de Março de 2025</li>
                    </ul>
             </div>
             <button class="cta-button">RESERVE SUA VAGA AGORA!</button>
         </div>
     </section>
-
+    <hr class="hero-divider">
     <!-- Temas e Palestrantes -->
     <section class="topics">
         <div class="content">
@@ -1047,6 +1052,32 @@
         <h2>PALESTRANTES CONFIRMADOS</h2>
         <div class="imagem-palestrante">
             <div class="box2">
+                <img src="img/mauricio.jpeg">
+            </div>
+            <div class="box3">
+                <h2>Maurício Soares Pancieri - Médico Veterinário</h2>
+                <p>Possui graduação em Medicina Veterinária pela Universidade Federal Rural da Amazônia (2007) e especialização em Bovinocultura de Corte pela Universidade Norte do Paraná (2008), e Mestrado em Defesa Sanitária Animal, pela Universidade Estadual do Maranhão (2024). Tem experiência na área de Medicina Veterinária, com ênfase em Inseminação Artificial em Tempo Fixo e Nutrição Animal. Atuou no seguimento de nutrição de animais de produção, até o início de 2018, com ênfase na nutrição de bovinos de corte, ministrando palestras e cursos, para representantes comerciais e produtores rurais, nos estados do Pará, Maranhão, Tocantins, Piauí e Ceará. Paralelamente, atuou como responsável técnico de indústria de suplementos alimentares para animais de produção. A partir de abril de 2019, passou a atuar como oficial médico veterinário militar, na Polícia Militar do Maranhão, em São Luís, onde atua nas áreas de manejo sanitário e alimentar de cães e equinos.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="hero-divider">
+    <section class="palestrante">
+        <h2>PALESTRANTES CONFIRMADOS</h2>
+        <div class="imagem-palestrante">
+            <div class="box2">
+                <img src="img/rafael.jpeg">
+            </div>
+            <div class="box3">
+                <h2>Raphael Bernardo da Silva Neto - Médico Veterinário</h2>
+                <p>Possui graduação pela Universidade Federal de Campina Grande, residência em Sanidade de ruminantes pela Universidade Federal do Piauí, mestrado em Defesa Sanitária animal com ênfase em manejo e bem-estar de equinos, doutorando em Clínica Veterinária pela Universidade de São Paulo na qual pesquiso sobre os fatores de risco para ocorrência da cólica equina no Brasil. Fui professor substituto das disciplinas de Clínica Médica de Equinos, patologia animal, terapêutica, dentre outras na Universidade Estadual da Região Tocantina do Maranhão.
+                    Atualmente sou oficial da Polícia Militar do Maranhão trabalhando como chefe da seção veterinária da cavalaria da cidade de Imperatriz.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="hero-divider">
+    <section class="palestrante">
+        <div class="imagem-palestrante">
+            <div class="box2">
                 <img src="img/palestrante1.jpeg" >
             </div>
             <div class="box3">
@@ -1057,7 +1088,7 @@
             </div>
         </div>
     </section>
-
+    <hr class="hero-divider">
     <section class="palestrante">
         <div class="imagem-palestrante">
             <div class="box2">
@@ -1072,11 +1103,23 @@
         Sou apaixonada por cavalos e acredito que a melhor forma de aprendizado é compartilhando conhecimentos.</p>
             </div>
         </div>
+        
+    </section>
+    <section class="palestrante3">
+        <div class="imagem-palestrante">
+            <div class="box2">
+                <img src="img/ColladoMoreno.jpeg" >
+            </div>
+            <div class="box3">
+                <h2>Rafael Collado Moreno</h2>
+                <p>Médico Veterinário formado pela FAMED de Garça, SP, com especialização em Sanidade de Animais de Produção pela UNESP de Botucatu. Possui MBA Executivo em Gestão Comercial com ênfase em Vendas pela FGV.
+                    Atua na área comercial há 16 anos, desenvolvendo atividades técnico-comerciais em diversas indústrias do ramo farmacêutico veterinário.
+                    Atualmente, exerce a função de Coordenador Comercial de Território nos estados do Maranhão (MA) e Tocantins (TO) pela Agener Saúde Animal.</p>
+            </div>
+        </div>
         <button class="cta-button">RESERVE SUA VAGA AGORA!</button>
     </section>
-
-
-    
+    <hr class="hero-divider">
     <!-- Benefícios de Participar -->
     <section class="topics">
         <div class="content">
@@ -1096,30 +1139,7 @@
         </section>
         <button class="cta-button">QUERO ME INSCREVER!</button>
     </section>
-
-    <!-- Depoimentos -->
-    <!-- <section class="testimonials">
-        <h2>Quem já participou de experiências como essa, recomenda!</h2>
-        <div class="testimonials-content">
-            <!-- Espaço para vídeos ou textos de depoimentos -->
-    <!--    </div>
-    </section> -->
-
-    <!-- Inscrição -->
- 
-
-    <!-- FAQ -->
-    <!--    
-    <section class="faq">
-        <h2>Tem dúvidas? Nós temos as respostas!</h2>
-        <ul>
-            <li><strong>Como faço para me inscrever?</strong> [Resposta]</li>
-            <li><strong>Qual o público-alvo do evento?</strong> [Resposta]</li>
-            <li><strong>Preciso ter experiência prévia na área?</strong> [Resposta]</li>
-            <li><strong>O evento oferece certificado?</strong> [Resposta]</li>
-        </ul>
-    </section>
--->
+    <hr class="hero-divider">
 <section class="faq">
     <h2>Tem dúvidas? Nós temos as respostas!</h2>
     <div class="question">
@@ -1154,15 +1174,63 @@
             <p>Sim, todos os participantes receberão um certificado ao final do evento.</p>
         </div>
     </div>
+    <div class="image-whatsapp">
+        <p class="whatsapp">Ainda ficou com dúvidas? Entre em contato conosco pelo nosso whatsapp</p>
+        <a href="https://wa.me/559982281800" target="_blank">
+        <img src="img/imagem-whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
 </section>
-
-
     <!-- Call to Action Final -->
+<section>
     <footer class="cta-final">
         <h2>AS VAGAS SÃO LIMITADAS!</h2>
         <p>Não perca essa oportunidade única de transformar sua carreira e aprender com os melhores. Inscreva-se agora e dê o próximo passo rumo ao sucesso.</p>
         <button class="cta-button">GARANTA SUA VAGA AGORA!</button>
     </footer>
+</section>
+    <section id="courses">
+        <div class="container">
+            <!-- Curso Individual Profissional -->
+            <div class="course-card">
+                <h2>Individual Profissional</h2>
+                <p>Aprenda e desenvolva habilidades profissionais com especialistas no assunto.</p>
+                <div class="price">R$600,00</div>
+                <a href="#" class="cta-button">Matricule-se</a>
+            </div>
+    
+            <!-- Curso Individual Estudante -->
+            <div class="course-card">
+                <h2>Individual Estudante</h2>
+                <p>Ideal para estudantes que desejam ampliar seus conhecimentos.</p>
+                <div class="price">R$400,00</div>
+                <a href="#" class="cta-button">Matricule-se</a>
+            </div>
+    
+            <!-- Ingresso Duplo -->
+            <div class="course-card">
+                <h2>Ingresso Duplo</h2>
+                <p>Você e um amigo podem participar juntos e economizar no ingresso.</p>
+                <div class="price">R$1.000,00 <br><small>(R$500,00 cada)</small></div>
+                <a href="#" class="cta-button">Matricule-se</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <p>&copy; 2025 Horse Academy Experience. Todos os direitos reservados.</p>
+            <script>
+                // Adiciona evento de clique a todos os botões "Matricule-se"
+                document.querySelectorAll('.cta-button').forEach(button => {
+                    button.addEventListener('click', event => {
+                        event.preventDefault(); // Previne o comportamento padrão do link
+                        document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+                    });
+                });
+            </script>
+        </footer>
+        
+    </section>
 
     <script>
         const countdown = () => {
@@ -1200,6 +1268,14 @@
                 answer.style.display = 'block';
                 icon.textContent = "-";
             }
+            });
+        });
+
+
+        document.querySelectorAll('.cta-button').forEach(button => {
+        button.addEventListener('click', event => {
+        event.preventDefault(); // Previne o comportamento padrão do link
+        document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
             });
         });
     </script>
