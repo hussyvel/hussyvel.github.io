@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horse Academy Experience</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="img/android-chrome-192x192.png">
-    <link rel="icon" type="image/x-icon" href="img/android-chrome-512x512.png">
-    <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="img/favicon.io/favicon-32x32.png">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    
-    <link rel="stylesheet" href="/hussyvel.github.io/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;480;565;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>   
-    <script src="script.js"></script>
+    <link rel="icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="192x192" href="img/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="512x512" href="img/android-chrome-512x512.png">
+<link rel="icon" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+<link rel="icon" sizes="32x32" href="img/favicon.io/favicon-32x32.png">
+
+<link rel="stylesheet" href="/hussyvel.github.io/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;480;565;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;480;565;600;700;800;900&family=Martel:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
  
     <style>
 
@@ -31,7 +30,7 @@
             font-family: "Martel", sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            text-align: justify;
             background-color: #F5EEE3;
         }
 
@@ -74,14 +73,15 @@
         }
 
         .hero-content h1 {
-            font-size: 2.5em;
-            margin-bottom: 150px;
+            margin-top: 10px;
+            margin-bottom: 200px;
             height: 10px;
             font-size: 32px;
             line-height: 1.2;
             font-weight: 900;
             font-style: normal;
             color: white;
+            text-align: center;
         }
 
         .hero-content p {
@@ -91,6 +91,7 @@
             color: white;
             font-weight: 900;
             font-style: normal;
+            text-align: center;
         }
 
         .hero-content img {
@@ -107,7 +108,7 @@
             margin-left: auto;
             margin-right: auto;
             line-height: 0.5;
-            border: 1px solid #3A0B1B;
+            border: 1px solid #420505;
             width: 80%;
         }
         
@@ -125,13 +126,15 @@
             background-color: #54a44c;
             color: white;
             border: none;
-            padding: 20px 20px;
-            font-size: 1.5em;
+            padding: 20px 40px;
+            font-size: 1rem;
             cursor: pointer;
             border-radius: 5px;
+            margin-top: 20px;
             margin-bottom: 5px;
             transition: transform 0.2s ease, background-color 0.3s ease;
-        
+            text-align: center;
+            display: inline-block;
         }
 
 
@@ -147,7 +150,23 @@
             color: white;
             border: none;
             padding: 10px 20px;
-            font-size: 1em;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .course-card .copy-button{
+            display: inline-block;
+            color: #9c8c58;
+            background-color: #9c8c58;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
             font-weight: bold;
             text-transform: uppercase;
             border-radius: 5px;
@@ -160,11 +179,12 @@
             font-size: 1.2em;
             margin-top: 1px;
             margin-bottom: 5px;
+            text-align: center;
             
         }
 
         .cor-topo {
-            background-color: #3A0B1B;
+            background-color: #420505;
             color: #9c8c58;
             padding: 10px 20px;
             font: sans-serif;
@@ -175,10 +195,17 @@
             gap: 20px;
         }
 
+        section.palestrante {
+        margin-top: 20px;
+        margin-bottom: 100px;
+        padding: 20px 0; /* Adicione padding apenas se quiser um pouco de espaço interno */
+    }
 
         section {
             padding: 10px 0;
         }
+
+
 
         footer {
             background-color: #F5EEE3;
@@ -202,7 +229,7 @@
         }
 
         section h3 {
-            color: #AE6B46;
+            color: #420505;
         }
 
         footer p {
@@ -235,8 +262,9 @@
 
         .image-text img {
             max-width: 150px;
-            border: 2px solid #3A0B1B;
+            border: 2px solid #420505;
             border-radius: 10px;
+            display: flex;
         }
 
         .image-text p {
@@ -247,25 +275,25 @@
         .image-text-large img {
             width:100%;
             height: 450px;
-            border: 2px solid #3A0B1B;
+            border: 2px solid #420505;
             border-radius: 10px;
             margin-bottom: 10px;
             align-items: stretch;
         }
 
         .about {
-        text-align: center;
+        text-align: justify;
         margin: 40px auto;
         max-width: 1200px;
         padding: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 48px;
         margin-top: 30px;
         }
 
         .about h2 {
             font-size: 32px;
             margin-bottom: 24px;
-            color: #3A0B1B;
+            color: #420505;
             margin-top: 0px;
         }
 
@@ -280,7 +308,7 @@
     }
 
 
-    .location {
+        .location {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -295,24 +323,24 @@
             padding: 20px;
             background-color: #F5EEE3;
             border-radius: 10px;
-            box-shadow: 0 4px 8px #3A0B1B;
-            text-align: center;
-            border: 2px solid #3A0B1B;
+            box-shadow: 0 4px 8px #420505;
+            text-align: justify;
+            border: 2px solid #420505;
             border-radius: 8px;
             margin-bottom: 24px;
             margin-top: 24px;
         }
 
     .box1 {
-        border: 2px solid #3A0B1B;
+        border: 2px solid #420505;
         border-radius: 8px;
         padding: 5px;
         width: 31%;
-        box-shadow: 0 4px 8px #3A0B1B;
+        box-shadow: 0 4px 8px #420505;
         margin-bottom: 24px;
         margin-top: 15px;
         align-items: stretch;
-        height: 530px;
+        height: 47vh;
     }
 
     .box1 img {
@@ -331,7 +359,7 @@
         margin-right: 24px;
         text-align: justify;
         padding: 10px;
-        color: #3A0B1B;
+        color: #420505;
         align-items: stretch;
 
     }
@@ -346,7 +374,7 @@
         margin-right: 24px;
         text-align: left;
         padding: 10px;
-        color: #3A0B1B;
+        color: #420505;
         align-items: stretch;
     }
 
@@ -367,16 +395,16 @@
     }
 
     .topics {
-    margin: 20px auto;
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço em cima/baixo */
     padding: 20px;
     max-width: 855px;
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #3A0B1B;
+    color: #420505;
     background-color: #f9f5f1; /* Fundo suave */
     border-radius: 20px;
-    border: 2px solid #3A0B1B;
+    border: 2px solid #420505;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
 }
 
@@ -384,7 +412,7 @@
 .topics h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #3A0B1B;
+    color: #420505;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -414,10 +442,10 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #3A0B1B;
+    color: #420505;
     background-color: #f9f5f1; /* Fundo suave */
     border-radius: 20px;
-    border: 2px solid #3A0B1B;
+    border: 2px solid #420505;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
 }
 
@@ -425,7 +453,7 @@
 .topics h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #3A0B1B;
+    color: #420505;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -471,7 +499,7 @@
 }
 
 .course-card {
-    background-color: #3A0B1B;
+    background-color: #420505;
     color: #9c8c58;
     border-radius: 10px;
     padding: 60px;
@@ -479,7 +507,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex-shrink: 0; /* Impede que os blocos diminuam em telas pequenas */
-    height: 600px;
+    height: 500px;
     margin-bottom: 30px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -513,8 +541,20 @@
     transition: background-color 0.3s ease;
 }
 
+
+.course-card .copy-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #F5EEE3;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
 .course-card .cta-button:hover {
-    background-color: #3A0B1B;
+    background-color: #420505;
 }
 
 
@@ -529,7 +569,7 @@
 
     .topics {
         padding: 10px;
-        width: 75%;
+        width: 90%;
     }
 
     .topics h2 {
@@ -549,6 +589,11 @@
 
     .box1 {
         width: 90%;
+        height: 600px;
+    }
+
+    .section.palestrante {
+        margin-top: 20px;
     }
 
     .topics h2 {
@@ -571,7 +616,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #3A0B1B;
+    color: #420505;
     }
 
     .testimonials {
@@ -581,7 +626,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #3A0B1B;
+    color: #420505;
     }
 
     .registration {
@@ -591,7 +636,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #3A0B1B;
+    color: #420505;
     }
 
 
@@ -602,7 +647,7 @@
     text-align: center;
     font-family: "Martel", sans-serif;
     line-height: 1.6;
-    color: #3A0B1B;
+    color: #420505;
     }
 
     .faq {
@@ -615,7 +660,7 @@
 .faq h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #3A0B1B;
+    color: #420505;
 }
 
 .question {
@@ -626,7 +671,7 @@
     width: 100%;
     text-align: left;
     background-color: #f4f4f4;
-    border: 2px solid #3A0B1B;
+    border: 2px solid #420505;
     padding: 15px 180px;
     cursor: pointer;
     font-size: 18px;
@@ -646,7 +691,7 @@
 .plus-icon {
     font-size: 24px;
     font-weight: bold;
-    color: #3A0B1B;
+    color: #420505;
     margin-right: 10px;
     flex-shrink: 0; /* Prevents shrinking */
 }
@@ -655,7 +700,7 @@
     display: none;
     padding: 15px 20px;
     background-color: #fff;
-    border-left: 3px solid #3A0B1B;
+    border-left: 3px solid #420505;
     border-radius: 0 0 5px 5px;
     margin-top: -2px; /* To avoid gaps */
 }
@@ -693,7 +738,7 @@
 
     /* Estilo para a seção de palestrantes */
 .palestrante {
-    padding: 0px 20px;
+    padding: 20px;
     background-color: #F5EEE3;
     text-align: center;
     margin-top: 10px;
@@ -702,9 +747,10 @@
 
 .palestrante h2 {
     font-size: 32px;
-    color: #3A0B1B;
+    color: #420505;
     margin-bottom: 20px;
     margin-top: 60px;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -712,43 +758,74 @@
 .imagem-palestrante {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    margin: 40px auto;
+    gap: 50px;
+    margin: 20px auto;
     max-width: 1200px;
     margin-bottom: 120px;
+
 }
 
 /* Dimensão personalizada da imagem */
 .imagem-palestrante .box2 img {
     width: 560px;
-    height: auto;
+    height: 560px;
     object-fit: cover; /* Ajusta o conteúdo da imagem para preencher o espaço */
-    border-radius: 10px;
+    border-radius: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
 }
 
 /* Estilo para o texto */
-.imagem-palestrante .box3 {
+ .box3 {
     max-width: 45%;
     text-align: left;
     margin-top: 100px;
+    border: 2px solid #420505;
+    border-radius: 20px;
+    height: 71vh;
+    padding: 20px 20px;
 }
 
-.imagem-palestrante .box3 h2 {
+ .box3 h2 {
     font-size: 32px;
-    color: #3A0B1B;
+    color: #420505;
     margin-bottom: 10px;
+    margin: 0;
 }
 
-.imagem-palestrante .box3 p {
-    font-size: 20px;
+ .box3 p {
+    font-size: 18px;
     line-height: 1.6;
-    color: #3A0B1B;
-    text-align: left;
+    color: #420505;
+    text-align: justify;
+    margin-top: 10px;
 }
 
+.box4{
+    max-width: 45%;
+    text-align: left;
+    margin-top: 175px;
+    border: 2px solid #420505;
+    border-radius: 20px;
+    height: 79vh;
+    padding: 20px 20px;
+}
+
+.box4 h2 {
+    font-size: 32px;
+    color: #420505;
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+.box4 p{
+    color: #420505;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 12px;
+    text-align: justify;
+}
 .course-card .cta-button:hover {
             background-color: #28a745;
             transform: scale(1.10);
@@ -769,11 +846,17 @@
     .imagem-palestrante .box3 {
         max-width: 100%;
     }
+
+    .imagem-palestrante .box4{
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
 }
 
 
 footer {
-    color: #3A0B1B;
+    color: #420505;
     text-align: center;
     padding: 10px 20px;
     font-size: 0.9rem;
@@ -796,7 +879,7 @@ footer {
 
 .image-whatsapp p.whatsapp {
     font-size: 1rem; /* Ajuste o tamanho do texto */
-    color: #3A0B1B;
+    color: #420505;
 }
 
 
@@ -805,7 +888,71 @@ footer {
     margin-bottom: 20px;
 }
 
+
+.qr-code {
+    text-align: center;
+    font-family: "Martel", sans-serif;
+    margin: 20px;
+}
     /* Responsividade */
+
+
+    .about .image-text-large .box8 img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% do container */
+    max-width: 590px; /* Define uma largura máxima para manter o layout proporcional */
+    height: auto; /* Mantém as proporções da imagem */
+    display: block; /* Remove margens indesejadas ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do container */
+}
+
+
+.about .box8 figure {
+    text-align: center; /* Centraliza tudo dentro do <figure>, incluindo o texto */
+    margin: 0 auto; /* Centraliza o <figure> no container */
+}
+
+
+.about .image-text-large .box9 img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% do container */
+    max-width: 590px; /* Define uma largura máxima para manter o layout proporcional */
+    height: auto; /* Mantém as proporções da imagem */
+    display: block; /* Remove margens indesejadas ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do container */
+}
+
+
+.about .box9 figure {
+    text-align: center; /* Centraliza tudo dentro do <figure>, incluindo o texto */
+    margin: 0 auto; /* Centraliza o <figure> no container */
+}
+
+.map-container {
+    position: relative;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    max-width: 1200px; /* Define um limite opcional de largura máxima */
+    margin: 0 auto; /* Centraliza o mapa na página */
+    padding-bottom: 50%; /* Define a altura proporcional (ajuste para mais ou menos) */
+    height: 0; /* Faz o hack de proporção funcionar */
+    overflow: hidden; /* Garante que nada exceda o contêiner */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+.map-container p {
+    text-align: center; /* Centraliza o texto de descrição do mapa */
+    font-size: 1rem;
+    margin-top: 8px; /* Espaçamento entre o mapa e a descrição */
+    color: #555;
+}
 
     
 
@@ -844,6 +991,47 @@ footer {
         }
     }
 
+
+    @media (max-width: 520px) {
+        .hero-content h1 {
+            font-size: 1.3rem;
+            line-height: 1.4;
+            margin-bottom: 150px;
+        }
+
+        .hero-content p {
+            font-size: 1rem;
+            margin: 20px 0 140px;
+        }
+
+        .section.palestrante{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            padding: 30px 30px;
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .location .box {
+            width: 90%;
+            height: auto;
+        }
+
+        .box p {
+            margin: 10px 0;
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+
+        .faq-question {
+            padding: 15px 105px;
+        }
+
+      
+    }
+
     @media (max-width: 480px) {
 
         .hero-content h1 {
@@ -858,13 +1046,22 @@ footer {
             margin-top: 55px;
         }
 
-        .hero-divider {
-            margin-top: 10px;
-            margin-bottom: 60px;
-            line-height: 0.5;
-            border: 1px solid #370707;
-            width: 100%;
+        hr.hero-divider{
+            margin: auto;
+            border: 1px solid #420505;
+
         }
+
+        .imagem-palestrante {
+    display: flex;
+    gap: 20px; /* Espaçamento entre imagem e texto */
+}
+
+.box2 img, .box4, .box3 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
 
         .cta-button {
             padding: 30px 30px;
@@ -902,41 +1099,7 @@ footer {
  
     }
 
-    @media (max-width: 520px) {
-        .hero-content h1 {
-            font-size: 1.3rem;
-            line-height: 1.4;
-            margin-bottom: 150px;
-        }
 
-        .hero-content p {
-            font-size: 1rem;
-            margin: 20px 0 140px;
-        }
-
-        .cta-button {
-            padding: 30px 30px;
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-        }
-
-        .location .box {
-            width: 90%;
-            height: auto;
-        }
-
-        .box p {
-            margin: 10px 0;
-            font-size: 0.9rem;
-            text-align: justify;
-        }
-
-        .faq-question {
-            padding: 15px 105px;
-        }
-
-      
-    }
 
 
     @media (max-width: 450px) {
@@ -1010,14 +1173,161 @@ footer {
     }
 
 
+    @media (max-width: 375px) {
+        .image-text-large {
+            flex-direction: column;
+            gap: 15px;
+        }
 
-  
+        .box {
+            width: 80%;
+            padding: 10px;
+        }
+
+        .about h2 {
+            font-size: 1.6rem;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            background-color: #54a44c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        
+        }
+
+    }
+
+    @media (max-width: 360px) {
+        .image-text-large {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .box {
+            width: 80%;
+            padding: 10px;
+        }
+
+        .about h2 {
+            font-size: 1.6rem;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            background-color: #54a44c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        
+        }
+
+    }
+
+
+    @media (max-width: 344px) {
+        .image-text-large {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .box {
+            width: 80%;
+            padding: 10px;
+        }
+
+        .about h2 {
+            font-size: 1.6rem;
+        }
+
+        .box p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .cta-button {
+            background-color: #54a44c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        
+        }
+
+    }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.copy-container {
+      text-align: center;
+    }
+
+    .copy-button {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    
+      }
+
+    .copy-button:hover {
+      background-color: #54a44c;
+      transform: scale(1.05);
+    }
+
+    .success-message {
+      margin-top: 10px;
+      color: #54a44c;
+      font-size: 14px;
+      display: none;
+    }
+    
+    .error-message {
+      margin-top: 10px;
+      color: #ff0000;
+      font-size: 14px;
+      display: none;
+    }
+
     </style>
 </head>
 <body>
     <!-- Countdown Timer -->
     <div class="cor-topo">
-        <div class="countdown" id="countdown">Transforme sua experiência incrível com a <strong>“Horse Academy”! </strong> Faltam apenas <span id="days">0</span> dias, <span id="hours">0</span> horas, <span id="minutes">0</span> minutos, <span id="seconds">0</span> segundos.</div>
+        <div class="countdown" id="countdown">Tenha uma experiência incrível com a <strong>“Horse Academy”! </strong> Faltam apenas <span id="days">0</span> dias, <span id="hours">0</span> horas, <span id="minutes">0</span> minutos, <span id="seconds">0</span> segundos.</div>
     </div>
     
    
@@ -1028,11 +1338,13 @@ footer {
         </video>
         <div class="hero-content">
             <!-- <img src="img/sublogo4.png" alt="Horse Academy Experience"> -->
-            <h1>TRANSFORME SUA PAIXÃO POR EQUINOS<br> EM UMA CARREIRA DE SUCESSO NA <br> HORSE ACADEMY EXPERIENCE! </span> 🌟</h1>
+            <h1>TRANSFORME SUA PAIXÃO POR EQUINOS<br> EM UMA CARREIRA DE SUCESSO COM O<br>HORSE ACADEMY EXPERIENCE!</span></h1>
             <hr class="hero-divider">
             <!--<hr class="hero-divider" style="border: 1px solid #FB9861; width: 100%; margin: 20px auto;">-->
-            <p>Participe do evento presencial que combina aprendizado prático e inspiração,<br> com especialistas renomados em nutrição, manejo, bem-estar <br> e desenvolvimento profissional.</p>
-            <button class="cta-button">Garanta já sua vaga!</button>
+            <p>Participe do evento presencial que combina aprendizado prático e inspiração,<br>
+                com especialistas renomados em nutrição, manejo, bem-estar <br>
+                de equinos e desenvolvimento profissional</p>
+            <button class="cta-button"><a href="#courses">Garanta já sua vaga!</a></button>
         </div>
     </header>
 
@@ -1056,23 +1368,58 @@ footer {
     <!-- Localização e Estrutura -->
     <section class="about">
         <h2>ONDE E QUANDO?</h2>
+        <br><br>
         <div class="image-text-large">
-            <div class="box">
-                <img src="img/sublogo4.png" >
+            <div class="box8">
+                <figure>
+                    <img src="img/hotel1.jpeg" alt="Hotel Stay In, local do evento">
+                    <br>
+                    <figcaption>Hotel Stay In - Local das palestras</figcaption>
+                </figure>
             </div>
             <div class="box1">
                 
-                <p>O evento acontecerá em Imperatriz, Maranhão, combinando teoria e prática em locais excepcionais:</p>
-                <ul class="lista">
-                        <li><strong>Palestras:</strong> Hotel Stay In</li>
-                        <li><strong>Prática:</strong> Haras Hotbell</li>
-                        <li><strong>Datas:</strong> 21 e 22 de Março de 2025</li>
-                   </ul>
+                <p>As palestras acontecerão no Hotel Stay Inn em Imperatriz, Maranhão, nos dias 21 e 22 de março de 2025.</p>
+                
             </div>
-            <button class="cta-button">RESERVE SUA VAGA AGORA!</button>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.8961058075156!2d-47.486553048968155!3d-5.511567664236277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92c55fc156bd4f1b%3A0xfc6c2a80f5013594!2sStay%20Inn%20Hotel%20Imperatriz!5e0!3m2!1sen!2sbr!4v1737774762476!5m2!1sen!2sbr" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
         </div>
     </section>
     <hr class="hero-divider">
+    <section class="about">
+        <h2>ONDE E QUANDO?</h2>
+        <br><br>
+        <div class="image-text-large">
+            <div class="box9">
+                <figure>
+                    <img src="img/harasHotbell.jpeg" alt="Haras Hotbell">
+                    <br>
+                    <figcaption>Haras Hotbell</figcaption>
+                </figure>
+            </div>
+            <div class="box1">
+                
+                <p>Os minicursos práticos acontecerão no Haras Hotbel, em Imperatriz, Maranhão, no dia 22 de março de 2025.</p>
+                
+            </div>
+
+            <div class="map-container">
+                <p>Confira o mapa de localização da prática:</p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.6419207323265!2d-47.425194324998394!3d-5.471167554520113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92cf8b005f40b963%3A0xd620e8d435e93193!2sHARAS%20HOTBEL!5e0!3m2!1sen!2sbr!4v1737774923373!5m2!1sen!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <button class="cta-button"><a href="#courses">GARANTA JÁ SUA VAGA!</a></button>
+        </div>
+    </section>
     <!-- Temas e Palestrantes -->
     <section class="topics">
         <div class="content">
@@ -1083,6 +1430,11 @@ footer {
             <li>Bem-Estar Animal: Abordagens éticas e científicas.</li>
             <li>Desenvolvimento Profissional: Como construir uma carreira de sucesso no mercado de equinos.</li>
         </ul>
+
+        <button class="copy-button">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf56nzmWsMiLLxF11RSjjZZVW_ZUd_TSXD9VXovPV1PoIFdbQ/viewform?usp=header" target="_blank" style="text-decoration: none; color: inherit;">CADASTRE-SE</a>
+        </button>
+        <br><br>
         </div>
     </section>
 
@@ -1092,8 +1444,8 @@ footer {
             <div class="box2">
                 <img src="img/mauricio.jpeg">
             </div>
-            <div class="box3">
-                <h2>Maurício Soares Pancieri - Médico Veterinário</h2>
+            <div class="box4">
+                <h2>Maurício Soares Pancieri</h2>
                 <p>Possui graduação em Medicina Veterinária pela Universidade Federal Rural da Amazônia (2007) e especialização em Bovinocultura de Corte pela Universidade Norte do Paraná (2008), e Mestrado em Defesa Sanitária Animal, pela Universidade Estadual do Maranhão (2024). Tem experiência na área de Medicina Veterinária, com ênfase em Inseminação Artificial em Tempo Fixo e Nutrição Animal. Atuou no seguimento de nutrição de animais de produção, até o início de 2018, com ênfase na nutrição de bovinos de corte, ministrando palestras e cursos, para representantes comerciais e produtores rurais, nos estados do Pará, Maranhão, Tocantins, Piauí e Ceará. Paralelamente, atuou como responsável técnico de indústria de suplementos alimentares para animais de produção. A partir de abril de 2019, passou a atuar como oficial médico veterinário militar, na Polícia Militar do Maranhão, em São Luís, onde atua nas áreas de manejo sanitário e alimentar de cães e equinos.</p>
             </div>
         </div>
@@ -1105,9 +1457,9 @@ footer {
                 <img src="img/rafael.jpeg">
             </div>
             <div class="box3">
-                <h2>Raphael Bernardo da Silva Neto - Médico Veterinário</h2>
-                <p>Possui graduação pela Universidade Federal de Campina Grande, residência em Sanidade de ruminantes pela Universidade Federal do Piauí, mestrado em Defesa Sanitária animal com ênfase em manejo e bem-estar de equinos, doutorando em Clínica Veterinária pela Universidade de São Paulo na qual pesquiso sobre os fatores de risco para ocorrência da cólica equina no Brasil. Fui professor substituto das disciplinas de Clínica Médica de Equinos, patologia animal, terapêutica, dentre outras na Universidade Estadual da Região Tocantina do Maranhão.
-                    Atualmente sou oficial da Polícia Militar do Maranhão trabalhando como chefe da seção veterinária da cavalaria da cidade de Imperatriz.</p>
+                <h2>Raphael Bernardo da Silva Neto</h2>
+                <p>Possui graduação pela Universidade Federal de Campina Grande, residência em Sanidade de ruminantes pela Universidade Federal do Piauí, mestrado em Defesa Sanitária animal com ênfase em manejo e bem-estar de equinos, doutorando em Clínica Veterinária pela Universidade de São Paulo na qual pesquiso sobre os fatores de risco para ocorrência da cólica equina no Brasil. Foi professor substituto das disciplinas de Clínica Médica de Equinos, patologia animal, terapêutica, dentre outras na Universidade Estadual da Região Tocantina do Maranhão.
+                    Atualmente é oficial da Polícia Militar do Maranhão trabalhando como chefe da seção veterinária da cavalaria da cidade de Imperatriz.</p>
             </div>
         </div>
     </section>
@@ -1118,7 +1470,7 @@ footer {
                 <img src="img/palestrante1.jpeg" >
             </div>
             <div class="box3">
-                <h2>Fúlvio Florenzano - Médico Veterinário</h2>
+                <h2>Fúlvio Florenzano</h2>
                 <p>Médico veterinário graduado na Universidade Federal Rural da Amazônia (UFRA) em 2009, participou de um dos maiores programas reprodutivos do mundo em 2010,
             130 mil IATFs no grupo Agropecuária Santa Bárbara, esteve a frente como gestor de pecuária na fazenda Guarani em 2012 e 2013,
             10 anos de atuação na prestação de serviço em Paragominas e região, com mais de 350 mil IATFs realizadas e atualmente é gestor da fazenda Santa Clara.</p>
@@ -1133,14 +1485,12 @@ footer {
             </div>
             <div class="box3">
                 <h2>Patrizia Barroso</h2>
-                <p>Possuo formação em Medicina Veterinária pela Universidade Paranaense, Unipar, 2009. Iniciei a carreira trabalhando com reprodução, manejo sanitário e cirurgia de 
-                bovinos e então em 2013 comecei a trabalhar com Reprodução Equina, onde não parei mais. Em 2015 comecei a trabalhar com Transferência de Embriões equinos.
-            Atualmente estou em processo de experiência em aspiração de oócitos (OPU) em éguas. Também atuo com clínica e cirurgia de cavalos.
-        Possuo pós graduação em Clínica e Cirurgia de Equinos (IBVET); Reprodução Equina (IBVET); Mestre em Reprodução Animal (REPROAMAZON).
-        Sou apaixonada por cavalos e acredito que a melhor forma de aprendizado é compartilhando conhecimentos.</p>
+                <p>Possui formação em Medicina Veterinária pela Universidade Paranaense (Unipar) em 2009. Iniciou a carreira trabalhando com reprodução, manejo sanitário e cirurgia de bovinos e, em 2013,
+                    passou a atuar com reprodução equina, área na qual permanece até hoje. Em 2015, começou a trabalhar com transferência de embriões em equinos e, atualmente, está em processo de especialização em aspiração de oócitos (OPU) em éguas.
+                    Também atua na clínica e cirurgia de cavalos. Possui pós-graduação em Clínica e Cirurgia de Equinos (IBVET),
+                    Reprodução Equina (IBVET) e é mestre em Reprodução Animal (REPROAMAZON). É apaixonada por cavalos e acredita que a melhor forma de aprendizado é por meio do compartilhamento de conhecimentos.</p>
             </div>
         </div>
-        
     </section>
     <hr class="hero-divider">
     <section class="palestrante">
@@ -1149,7 +1499,7 @@ footer {
                 <img src="img/leticia.jpeg" >
             </div>
             <div class="box3">
-                <h2>Letícia Nogueira - Médico Veterinária</h2>
+                <h2>Letícia Nogueira</h2>
                 <p>Médica veterinária graduada na Universidade Federal do Piauí  (UFPI) em 2017, 
                     aprimoramento em Clínica e Cirurgia de Grandes Animais na Universidade Federal do Piauí e 
                     residência em Clínica e Cirurgia de Grandes Animais na Universidade Federal do Piauí,
@@ -1158,7 +1508,21 @@ footer {
                      formada em Quiropraxia Veterinária pela Healing Vet em 2023.</p>
             </div>
         </div>
-        
+    </section>
+    <hr class="hero-divider">
+    <section class="palestrante">
+        <div class="imagem-palestrante">
+            <div class="box2">
+                <img src="img/glads.jpeg" >
+            </div>
+            <div class="box3">
+                <h2>Glads Iuby Almeida de Melo</h2>
+                <p>Formado em Medicina Veterinária pela Universidade Federal do Tocantins 2015, 
+                possui residência em Clínica Médica e Cirúrgica de Grandes animais pela Universidade Federal do Piauí 2016/2018,
+                com ampla experiência em clínica de equinos, atuando principalmente nas afecções do sistema locomotor e aparelho digestivo. 
+                Curso Completo Xeque Mate Proprietário da Hipiatrika</p>
+            </div>
+        </div>
     </section>
     <hr class="hero-divider">
     <section class="palestrante">
@@ -1173,9 +1537,37 @@ footer {
                     Atualmente, exerce a função de Coordenador Comercial de Território nos estados do Maranhão (MA) e Tocantins (TO) pela Agener Saúde Animal.</p>
             </div>
         </div>
-        <button class="cta-button">RESERVE SUA VAGA AGORA!</button>
     </section>
     <hr class="hero-divider">
+    <section class="palestrante">
+        <div class="imagem-palestrante">
+            <div class="box2">
+                <img src="img/leonardo.jpeg" >
+            </div>
+            <div class="box3">
+                <h2>Leonardo moreira de Oliveira</h2>
+                <p>Médico veterinário formado pela Universidade Estadual do Maranhão. 
+                Aperfeiçoamento e mestrado em anestesiologia veterinária pela Universidade Federal de Campina Grande e doutorado pela Universidade Federal Rural de Pernambuco na área de cirurgia veterinária com ênfase em ortopedia. Docente do curso de medicina veterinária da Universidade Estadual da Região Tocantina do Maranhão onde atua como professor das disciplinas de Clínica e Cirugia de Pequenos animais.
+                Sócio proprietário da Imperial Medicina Equina, responsável pelo serviço de cirurgia.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="hero-divider">
+    <section class="palestrante">
+        <div class="imagem-palestrante">
+            <div class="box2">
+                <img src="img/Carol.jpeg" >
+            </div>
+            <div class="box3">
+                <h2>Carolina Mura Ramos</h2>
+                <p>Possui Graduação em Medicina Veterinária pela Universidade Estadual Paulista "Julio de Mesquita Filho" - campus de Botucatu (2009-2013).
+                Residência em Cirurgia de Grandes Animais no Hospital Veterinário Universidade Estadual Paulista "Julio de Mesquita Filho" - campus de Botucatu (2014-2016). 
+                Atualmente é sócia-proprietária da clínica Imperial Medicina Equina na cidade de São Miguel do Tocantins/TO,
+                atuando nas áreas de clínica e cirurgia equina.</p>
+            </div>
+        </div>
+        <button class="cta-button"><a href="#courses">GARANTA JÁ SUA VAGA!</a></button>
+    </section>
     <!-- Benefícios de Participar -->
     <section class="topics">
         <div class="content">
@@ -1189,15 +1581,49 @@ footer {
         </div>
         <section class="registration">
             <h2>Invista no seu futuro agora!</h2>
-            <p>Garanta sua vaga por um valor especial de lançamento: [Inserir valor]</p>
-            <p>[Inserir informações de parcelamento, descontos para grupos ou bônus]</p>
             
         </section>
-        <button class="cta-button">QUERO ME INSCREVER!</button>
+        <button class="cta-button"><a href="#courses">QUERO ME INSCREVER!</a></button>
     </section>
     <hr class="hero-divider">
+    <section class="topics">
+        <div class="content">
+            <h2>PROGRAMAÇÃO</h2>
+            <h3>21 E 22 DE MARÇO DE 2025</h3>
+            <br><br>
+            <div class="palestras">
+                <h2>PALESTRAS</h2>
+            </div>
+        <ul>
+            <li>Como Construir uma Carreira de Sucesso?</li>
+            <li>Precificação e cobrança: experiência de um hospital veterinário de equinos.</li>
+            <li>Impacto das doenças do sistema locomotor na produção de equinos.</li>
+            <li>Como melhorar o desempenho de cavalos atletas através da fisioterapia.</li>
+            <li>Como utilizar a ultrassonografia para auxiliar no diagnóstico da síndrome Cólica.</li>
+            <li>Como Ajustar a Dieta de um Cavalo de Trabalho</li>
+            <li>Como garantir Bem-estar na criação de cavalos.</li>
+        </ul>
+        </div>
+        <section class="registration">
+            <h2>MINICURSOS</h2>
+            <br>
+            <h3>Cada participante poderá se inscrever em até 2 (dois) minicursos.</h3>
+            <br>
+            <ul>
+                <li>Descomplicando o Cálculo de Dietas para uma fazenda/haras.</li>
+                <li>Diagnóstico e Tratamento de lesões no sistema locomotor</li>
+                <li>Práticas de Fisioterapia em Equinos</li>
+                <li>Ultrassonografia da Reprodução das Éguas</li>
+            <ul>
+        </section>
+        <button class="cta-button"><a href="#courses">QUERO ME INSCREVER!</a></button>
+    </section>
+
+
 <section class="faq">
+    <br><br>
     <h2>Tem dúvidas? Nós temos as respostas!</h2>
+    <br><br>
     <div class="question">
         <button class="faq-question">
             <span class="plus-icon">+</span> Como faço para me inscrever?
@@ -1230,6 +1656,14 @@ footer {
             <p>Sim, todos os participantes receberão um certificado ao final do evento.</p>
         </div>
     </div>
+    <div class="question">
+        <button class="faq-question">
+            <span class="plus-icon">+</span> Quais as formas de pagamento?
+        </button>
+        <div class="faq-answer">
+            <p>Pix e cartão de crédito</p>
+        </div>
+    </div>
     <div class="image-whatsapp">
         <p class="whatsapp">Ainda ficou com dúvidas? Entre em contato conosco pelo nosso whatsapp</p>
         <a href="https://wa.me/559982281800" target="_blank">
@@ -1241,56 +1675,97 @@ footer {
 <section>
     <footer class="cta-final">
         <h2>AS VAGAS SÃO LIMITADAS!</h2>
-        <p>Não perca essa oportunidade única de transformar sua carreira e aprender com os melhores. Inscreva-se agora e dê o próximo passo rumo ao sucesso.</p>
-        <button class="cta-button">GARANTA SUA VAGA AGORA!</button>
+        <br>
+        <h3>Não perca essa oportunidade única de transformar sua carreira e aprender com os melhores. <br>
+            Inscreva-se agora e dê o próximo passo rumo ao sucesso.</h3>
+            
     </footer>
 </section>
-    <section id="courses">
-        <div class="container">
-            <!-- Curso Individual Profissional -->
-            <div class="course-card">
-                <h2>Individual Profissional</h2>
-                <p>Aprenda e desenvolva habilidades profissionais com especialistas no assunto.</p>
-                <div class="price">R$600,00</div>
-                <a href="#" class="cta-button">Matricule-se</a>
-            </div>
-    
-            <!-- Curso Individual Estudante -->
-            <div class="course-card">
-                <h2>Individual Estudante</h2>
-                <p>Ideal para estudantes que desejam ampliar seus conhecimentos.</p>
-                <div class="price">R$400,00</div>
-                <a href="#" class="cta-button">Matricule-se</a>
-            </div>
-    
-            <!-- Ingresso Duplo -->
-            <div class="course-card">
-                <h2>Ingresso Duplo</h2>
-                <p>Você e um amigo podem participar juntos e economizar no ingresso.</p>
-                <div class="price">R$1.000,00 <br><small>(R$500,00 cada)</small></div>
-                <a href="#" class="cta-button">Matricule-se</a>
-            </div>
+<section id="courses">
+    <div class="container">
+        <!-- Curso Individual Estudante -->
+        <div class="course-card">
+            <h2>Individual Estudante</h2>
+            <p>Ideal para estudantes que desejam ampliar seus conhecimentos.</p>
+            <div class="price">R$400,00</div>
+            <button class="copy-button">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf56nzmWsMiLLxF11RSjjZZVW_ZUd_TSXD9VXovPV1PoIFdbQ/viewform?usp=header" target="_blank" style="text-decoration: none; color: inherit;">CADASTRE-SE</a>
+            </button>
+            <br><br>
+            <a href="https://link.ton.com.br/?id=5d79f6f8-ff79-4ae5-90e1-e632fd4c4006" class="cta-button" target="_blank">INSCREVA-SE COM CARTÃO</a>
+            <p>ou</p>
+            <button class="copy-button" onclick="copyCode('pix-code-estudante', 'success-estudante')">INSCREVA-SE COM PIX</button>
+            <p id="pix-code-estudante" style="display: none;">00020126580014br.gov.bcb.pix0136e4d46dfb-dbab-4a65-88b0-3205c860f0d55204000053039865406400.005802BR5920Erica Abreu Passinho6014RIO DE JANEIRO622805243e51fe0fac162618f3ceb14363041ABC</p>
+            <p class="success-message" id="success-estudante" style="display: none;">Código copiado com sucesso!</p>
         </div>
-    </section>
+
+        <!-- Curso Individual Profissional -->
+        <div class="course-card">
+            <h2>Individual Profissional</h2>
+            <p>Aprenda e desenvolva habilidades profissionais com especialistas no assunto.</p>
+            <div class="price">R$600,00</div>
+            <button class="copy-button">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf56nzmWsMiLLxF11RSjjZZVW_ZUd_TSXD9VXovPV1PoIFdbQ/viewform?usp=header" target="_blank" style="text-decoration: none; color: inherit;">CADASTRE-SE</a>
+            </button>
+            <br><br>
+            <a href="https://link.ton.com.br/?id=54ac26a4-8cf2-4f1e-8ec3-7bf851d62091" class="cta-button" target="_blank">INSCREVA-SE COM CARTÃO</a>
+            <p>ou</p>
+            <button class="copy-button" onclick="copyCode('pix-code-profissional', 'success-profissional')">INSCREVA-SE COM PIX</button>
+            <p id="pix-code-profissional" style="display: none;">00020126580014br.gov.bcb.pix0136e4d46dfb-dbab-4a65-88b0-3205c860f0d55204000053039865406600.005802BR5920Erica Abreu Passinho6014RIO DE JANEIRO62280524a01fa33a30c97766c9a3ad0e6304937C</p>
+            <p class="success-message" id="success-profissional" style="display: none;">Código copiado com sucesso!</p>
+        </div>
+
+        
+        <!-- Ingresso Duplo -->
+        <div class="course-card">
+            <h2>Duplo Profissional</h2>
+            <p>Você e um amigo podem participar juntos e economizar no ingresso.</p>
+            <div class="price">R$1.000,00 (R$500,00 cada)</div>
+            <button class="copy-button">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf56nzmWsMiLLxF11RSjjZZVW_ZUd_TSXD9VXovPV1PoIFdbQ/viewform?usp=header" target="_blank" style="text-decoration: none; color: inherit;">CADASTRE-SE</a>
+            </button>
+            <br><br>
+            <a href="https://link.ton.com.br/?id=042eb4d4-8043-4a0f-9b3c-413c3d323a98" class="cta-button" target="_blank">INSCREVA-SE COM CARTÃO</a>
+            <p>ou</p>
+            <button class="copy-button" onclick="copyCode('pix-code-duplo', 'success-duplo')">INSCREVA-SE COM PIX</button>
+            <p id="pix-code-duplo" style="display: none;">00020126580014br.gov.bcb.pix0136e4d46dfb-dbab-4a65-88b0-3205c860f0d552040000530398654071000.005802BR5920Erica Abreu Passinho6014RIO DE JANEIRO6228052445e7937391b8966a36487faa6304D33E</p>
+            <p class="success-message" id="success-duplo" style="display: none;">Código copiado com sucesso!</p>
+        </div>
+    </div>
+</section>
+
     <section>
         <footer>
             <p>&copy; 2025 Horse Academy Experience. Todos os direitos reservados.</p>
             <script>
-                // Adiciona evento de clique a todos os botões "Matricule-se"
+                // Adiciona evento de clique a todos os botões "cta-button"
                 document.querySelectorAll('.cta-button').forEach(button => {
                     button.addEventListener('click', event => {
-                        event.preventDefault(); // Previne o comportamento padrão do link
-                        document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
+                        const href = button.getAttribute('href'); // Obtém o link do botão
+            
+                        // Verifica se o link é externo (começa com http ou https)
+                        if (href.startsWith('http') || href.startsWith('https')) {
+                            // Permite o comportamento padrão para links externos
+                            return;
+                        }
+            
+                        // Previne o comportamento padrão para links internos e faz scroll suave
+                        event.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth' });
+                        }
                     });
                 });
             </script>
+            
         </footer>
         
     </section>
 
     <script>
         const countdown = () => {
-            const eventDate = new Date("2025-01-31T00:00:00").getTime();
+            const eventDate = new Date("2025-03-21T00:00:00").getTime();
             const now = new Date().getTime();
             const difference = eventDate - now;
 
@@ -1329,12 +1804,42 @@ footer {
 
 
         document.querySelectorAll('.cta-button').forEach(button => {
-        button.addEventListener('click', event => {
-        event.preventDefault(); // Previne o comportamento padrão do link
-        document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
+    button.addEventListener('click', event => {
+        const href = button.getAttribute('href'); // Obtém o link do botão
+        
+        // Verifica se o link é externo (começa com http ou https)
+        if (href.startsWith('http') || href.startsWith('https')) {
+            return; // Permite o comportamento padrão para links externos
+        }
+
+        // Previne o comportamento padrão para links internos e faz scroll suave
+        event.preventDefault();
+        const target = document.querySelector(href); // Seleciona o elemento do destino
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' }); // Faz o scroll suave
+        } else {
+            console.error('Seção não encontrada:', href);
+        }
+    });
+});
     </script>
+
+
+<script>
+    function copyCode(pixId, successId) {
+        const pixCode = document.getElementById(pixId).innerText;
+        navigator.clipboard.writeText(pixCode).then(() => {
+            const successMessage = document.getElementById(successId);
+            successMessage.style.display = "block";
+            setTimeout(() => {
+                successMessage.style.display = "none";
+            }, 3000); // Oculta a mensagem após 3 segundos
+        }).catch(err => {
+            console.error("Erro ao copiar o código PIX: ", err);
+        });
+    }
+</script>
+
 </body>
 
 
