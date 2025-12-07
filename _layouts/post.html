@@ -9,6 +9,8 @@ layout: default
             <time datetime="{{ page.date | date_to_xmlschema }}">
                 {% if page.lang == "en" %}
                 {{ page.date | date: "%B %d, %Y" }}
+                {% elsif page.lang == "fr" %}
+                {{ page.date | date: "%d %B %Y" }}
                 {% else %}
                 {{ page.date | date: "%d de %B de %Y" }}
                 {% endif %}
@@ -16,6 +18,8 @@ layout: default
             {% if page.author %}
                 {% if page.lang == "en" %}
                 <span class="post-author">by {{ page.author }}</span>
+                {% elsif page.lang == "fr" %}
+                <span class="post-author">par {{ page.author }}</span>
                 {% else %}
                 <span class="post-author">por {{ page.author }}</span>
                 {% endif %}
@@ -49,6 +53,8 @@ layout: default
             <a href="{{ page.previous.url | relative_url }}" class="post-nav-prev">
                 {% if page.lang == "en" %}
                 <span class="post-nav-label">← Previous Post</span>
+                {% elsif page.lang == "fr" %}
+                <span class="post-nav-label">← Article Précédent</span>
                 {% else %}
                 <span class="post-nav-label">← Post Anterior</span>
                 {% endif %}
@@ -60,6 +66,8 @@ layout: default
             <a href="{{ page.next.url | relative_url }}" class="post-nav-next">
                 {% if page.lang == "en" %}
                 <span class="post-nav-label">Next Post →</span>
+                {% elsif page.lang == "fr" %}
+                <span class="post-nav-label">Article Suivant →</span>
                 {% else %}
                 <span class="post-nav-label">Próximo Post →</span>
                 {% endif %}

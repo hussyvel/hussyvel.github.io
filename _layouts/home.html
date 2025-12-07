@@ -7,6 +7,8 @@ layout: default
         <h1 class="hero-title">{{ site.title }}</h1>
         {% if page.lang == "en" %}
         <p class="hero-description">A blog about technology, development and innovation</p>
+        {% elsif page.lang == "fr" %}
+        <p class="hero-description">Un blog sur la technologie, le développement et l'innovation</p>
         {% else %}
         <p class="hero-description">{{ site.description }}</p>
         {% endif %}
@@ -15,14 +17,18 @@ layout: default
     <section class="posts-list">
         {% if page.lang == "en" %}
         <h2 class="section-title">Latest Posts</h2>
+        {% elsif page.lang == "fr" %}
+        <h2 class="section-title">Derniers Articles</h2>
         {% else %}
         <h2 class="section-title">Últimos Posts</h2>
         {% endif %}
 
         {% if page.lang == "en" %}
             {% assign filtered_posts = site.posts | where: "lang", "en" %}
+        {% elsif page.lang == "fr" %}
+            {% assign filtered_posts = site.posts | where: "lang", "fr" %}
         {% else %}
-            {% assign filtered_posts = site.posts | where_exp: "post", "post.lang != 'en'" %}
+            {% assign filtered_posts = site.posts | where_exp: "post", "post.lang != 'en' and post.lang != 'fr'" %}
         {% endif %}
 
         {% if filtered_posts.size > 0 %}
@@ -63,6 +69,10 @@ layout: default
                     <a href="{{ post.url | relative_url }}" class="post-card-link">
                         Read more →
                     </a>
+                    {% elsif page.lang == "fr" %}
+                    <a href="{{ post.url | relative_url }}" class="post-card-link">
+                        Lire la suite →
+                    </a>
                     {% else %}
                     <a href="{{ post.url | relative_url }}" class="post-card-link">
                         Ler mais →
@@ -75,6 +85,8 @@ layout: default
         {% else %}
             {% if page.lang == "en" %}
             <p class="no-posts">No posts published yet. Amazing content coming soon!</p>
+            {% elsif page.lang == "fr" %}
+            <p class="no-posts">Aucun article publié pour le moment. Du contenu incroyable arrive bientôt !</p>
             {% else %}
             <p class="no-posts">Nenhum post publicado ainda. Em breve teremos conteúdo incrível por aqui!</p>
             {% endif %}
