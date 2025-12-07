@@ -567,6 +567,120 @@ body {
 }
 
 /* ================================
+   Content Pages (Sobre, etc)
+   ================================ */
+.main-content > h1,
+.main-content > h2,
+.main-content > h3,
+.main-content > p,
+.main-content > ul,
+.main-content > ol,
+.main-content > hr {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content > h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.main-content > h2 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-top: var(--spacing-3xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.main-content > h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.main-content > p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+}
+
+.main-content > ul,
+.main-content > ol {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-xl);
+    padding-left: var(--spacing-xl);
+}
+
+.main-content > ul li,
+.main-content > ol li {
+    margin-bottom: var(--spacing-md);
+}
+
+.main-content > ul li strong,
+.main-content > ol li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.main-content > hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: var(--spacing-3xl) auto;
+}
+
+/* Links dentro do conteúdo */
+.main-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.main-content a:hover {
+    color: var(--primary-dark);
+    border-bottom-color: var(--primary-dark);
+}
+
+/* Destaque para código inline */
+.main-content code {
+    background-color: var(--bg-secondary);
+    color: var(--primary-dark);
+    padding: 0.2em 0.4em;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+}
+
+/* Blockquotes */
+.main-content blockquote {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto;
+    padding-left: var(--spacing-lg);
+    border-left: 4px solid var(--primary-color);
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Centralizar wrapper do conteúdo */
+.main-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ================================
    Responsive
    ================================ */
 @media (max-width: 768px) {
@@ -623,5 +737,24 @@ body {
 
     .container {
         padding: 0 var(--spacing-md);
+    }
+
+    /* Ajustes para páginas de conteúdo em mobile */
+    .main-content > h1 {
+        font-size: 2rem;
+    }
+
+    .main-content > h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-content > h3 {
+        font-size: 1.25rem;
+    }
+
+    .main-content > p,
+    .main-content > ul,
+    .main-content > ol {
+        font-size: 1rem;
     }
 }
