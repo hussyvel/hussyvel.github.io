@@ -7,10 +7,18 @@ layout: default
         <h1 class="post-title">{{ page.title }}</h1>
         <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">
+                {% if page.lang == "en" %}
+                {{ page.date | date: "%B %d, %Y" }}
+                {% else %}
                 {{ page.date | date: "%d de %B de %Y" }}
+                {% endif %}
             </time>
             {% if page.author %}
-            <span class="post-author">por {{ page.author }}</span>
+                {% if page.lang == "en" %}
+                <span class="post-author">by {{ page.author }}</span>
+                {% else %}
+                <span class="post-author">por {{ page.author }}</span>
+                {% endif %}
             {% endif %}
             {% if page.categories %}
             <span class="post-categories">
@@ -39,17 +47,28 @@ layout: default
         <div class="post-nav">
             {% if page.previous.url %}
             <a href="{{ page.previous.url | relative_url }}" class="post-nav-prev">
+                {% if page.lang == "en" %}
+                <span class="post-nav-label">← Previous Post</span>
+                {% else %}
                 <span class="post-nav-label">← Post Anterior</span>
+                {% endif %}
                 <span class="post-nav-title">{{ page.previous.title }}</span>
             </a>
             {% endif %}
 
             {% if page.next.url %}
             <a href="{{ page.next.url | relative_url }}" class="post-nav-next">
+                {% if page.lang == "en" %}
+                <span class="post-nav-label">Next Post →</span>
+                {% else %}
                 <span class="post-nav-label">Próximo Post →</span>
+                {% endif %}
                 <span class="post-nav-title">{{ page.next.title }}</span>
             </a>
             {% endif %}
         </div>
     </footer>
 </article>
+
+<!-- Comments Section -->
+{% include comments.html %}

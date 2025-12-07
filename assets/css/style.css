@@ -154,6 +154,29 @@ body {
     width: 100%;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    margin-left: var(--spacing-md);
+}
+
+.lang-switcher a {
+    background-color: var(--bg-secondary);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.lang-switcher a::after {
+    display: none;
+}
+
 /* ================================
    Main Content
    ================================ */
