@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="container">
         <nav class="site-nav">
-            <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="site-logo">
+            <a href="{% if page.lang == 'en' %}/en/{% elsif page.lang == 'fr' %}/fr/{% else %}/{% endif %}" class="site-logo">
                 <strong>{{ site.title }}</strong>
             </a>
 
@@ -19,6 +19,18 @@
                 <li><a href="{{ '/en/blog/' | relative_url }}" {% if page.url contains '/en/blog' %}class="active"{% endif %}>Blog</a></li>
                 <li class="lang-switcher">
                     <a href="{{ page.url | remove: '/en' }}" title="Português">🇧🇷 PT</a>
+                    <a href="/fr{{ page.url | remove: '/en' }}" title="Français">🇨🇦 FR</a>
+                </li>
+            </ul>
+            {% elsif page.lang == "fr" %}
+            <!-- French Navigation -->
+            <ul class="nav-menu">
+                <li><a href="{{ '/fr/' | relative_url }}" {% if page.url == '/fr/' or page.url == '/fr/index.html' %}class="active"{% endif %}>Accueil</a></li>
+                <li><a href="{{ '/fr/about/' | relative_url }}" {% if page.url contains '/fr/about' %}class="active"{% endif %}>À propos</a></li>
+                <li><a href="{{ '/fr/blog/' | relative_url }}" {% if page.url contains '/fr/blog' %}class="active"{% endif %}>Blog</a></li>
+                <li class="lang-switcher">
+                    <a href="{{ page.url | remove: '/fr' }}" title="Português">🇧🇷 PT</a>
+                    <a href="/en{{ page.url | remove: '/fr' }}" title="English">🇺🇸 EN</a>
                 </li>
             </ul>
             {% else %}
@@ -29,6 +41,7 @@
                 <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a></li>
                 <li class="lang-switcher">
                     <a href="/en{{ page.url }}" title="English">🇺🇸 EN</a>
+                    <a href="/fr{{ page.url }}" title="Français">🇨🇦 FR</a>
                 </li>
             </ul>
             {% endif %}
