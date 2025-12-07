@@ -1,0 +1,170 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-page">
+    <header class="page-header">
+        <h1>Todos os Posts</h1>
+        <p>Explore todos os artigos do blog organizados por data</p>
+    </header>
+
+    <div class="posts-archive">
+        {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+        {% for year in postsByYear %}
+        <section class="year-section">
+            <h2 class="year-title">{{ year.name }}</h2>
+
+            <div class="posts-list-archive">
+                {% for post in year.items %}
+                <article class="post-item">
+                    <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%d %b" }}
+                    </time>
+
+                    <div class="post-info">
+                        <h3 class="post-title-archive">
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </h3>
+
+                        {% if post.categories %}
+                        <div class="post-categories-archive">
+                            {% for category in post.categories %}
+                            <span class="category-badge">{{ category }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        {% if post.excerpt %}
+                        <p class="post-excerpt-archive">
+                            {{ post.excerpt | strip_html | truncatewords: 25 }}
+                        </p>
+                        {% endif %}
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+.blog-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+}
+
+.page-header p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.year-section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.year-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.posts-list-archive {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.post-item {
+    display: flex;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+}
+
+.post-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.post-date {
+    flex-shrink: 0;
+    width: 80px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+.post-info {
+    flex: 1;
+}
+
+.post-title-archive {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-title-archive a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.post-title-archive a:hover {
+    color: var(--primary-color);
+}
+
+.post-categories-archive {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.category-badge {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    border-radius: var(--radius-sm);
+}
+
+.post-excerpt-archive {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .post-item {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .post-date {
+        width: auto;
+    }
+}
+</style>
