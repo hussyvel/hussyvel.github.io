@@ -11,8 +11,9 @@ Um blog moderno sobre tecnologia, desenvolvimento e inovação, construído com 
 - 🔍 SEO otimizado
 - 📊 Suporte a RSS feed
 - 🌐 Sitemap automático
-- 🌍 **Multilíngue** - Suporte completo para Português e Inglês
+- 🌍 **Trilíngue** - Suporte completo para Português, Inglês e Francês
 - 💬 **Comentários** - Sistema de comentários integrado (Giscus, Disqus ou Utterances)
+- 📖 **Guia Detalhado** - Instruções completas de configuração em [SETUP_LOCAL.md](SETUP_LOCAL.md)
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -164,19 +165,21 @@ const saudacao = (nome) => {
 };
 \`\`\`
 
-## 🌍 Multilíngue (Português / Inglês)
+## 🌍 Multilíngue (Português / Inglês / Francês)
 
-O blog suporta dois idiomas: Português (padrão) e Inglês.
+O blog suporta três idiomas: Português (padrão), Inglês e Francês.
 
 ### Estrutura de URLs
 
 - **Português**: `https://hussyvel.github.io/` (raiz)
 - **Inglês**: `https://hussyvel.github.io/en/`
+- **Francês**: `https://hussyvel.github.io/fr/`
 
-### Criar Post em Inglês
+### Criar Posts em Outros Idiomas
 
-1. Crie o arquivo em `en/_posts/YYYY-MM-DD-titulo.md`
-2. Adicione `lang: en` no front matter:
+**Todos os posts ficam em `_posts/`** independente do idioma. O idioma é controlado pelo parâmetro `lang` no front matter.
+
+#### Post em Inglês:
 
 ```yaml
 ---
@@ -191,9 +194,24 @@ permalink: /en/blog/:year/:month/:day/:title/
 ---
 ```
 
+#### Post em Francês:
+
+```yaml
+---
+layout: post
+title: "Titre de l'Article"
+date: 2025-12-07 10:00:00 -0300
+categories: [technologie]
+tags: [programmation, web]
+author: Votre Nom
+lang: fr
+permalink: /fr/blog/:year/:month/:day/:title/
+---
+```
+
 ### Seletor de Idioma
 
-O seletor de idioma aparece automaticamente no header do site (bandeiras 🇧🇷 PT / 🇺🇸 EN).
+O seletor de idioma aparece automaticamente no header do site (bandeiras 🇧🇷 PT / 🇺🇸 EN / 🇨🇦 FR).
 
 ## 💬 Sistema de Comentários
 
