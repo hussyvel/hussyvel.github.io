@@ -28,7 +28,12 @@ layout: default
         {% elsif page.lang == "fr" %}
             {% assign filtered_posts = site.posts | where: "lang", "fr" %}
         {% else %}
-            {% assign filtered_posts = site.posts | where_exp: "post", "post.lang != 'en' and post.lang != 'fr'" %}
+            {% assign filtered_posts = "" | split: "" %}
+            {% for post in site.posts %}
+                {% unless post.lang == "en" or post.lang == "fr" %}
+                    {% assign filtered_posts = filtered_posts | push: post %}
+                {% endunless %}
+            {% endfor %}
         {% endif %}
 
         {% if filtered_posts.size > 0 %}
