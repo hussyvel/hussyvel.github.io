@@ -1,7 +1,7 @@
 <header class="site-header">
     <div class="container">
         <nav class="site-nav">
-            <a href="{{ '/' | relative_url }}" class="site-logo">
+            <a href="{% if page.lang == 'en' %}/en/{% else %}/{% endif %}" class="site-logo">
                 <strong>{{ site.title }}</strong>
             </a>
 
@@ -11,12 +11,29 @@
                 <span></span>
             </button>
 
+            {% if page.lang == "en" %}
+            <!-- English Navigation -->
+            <ul class="nav-menu">
+                <li><a href="{{ '/en/' | relative_url }}" {% if page.url == '/en/' or page.url == '/en/index.html' %}class="active"{% endif %}>Home</a></li>
+                <li><a href="{{ '/en/about/' | relative_url }}" {% if page.url contains '/en/about' %}class="active"{% endif %}>About</a></li>
+                <li><a href="{{ '/en/blog/' | relative_url }}" {% if page.url contains '/en/blog' %}class="active"{% endif %}>Blog</a></li>
+                <li><a href="{{ '/eventos/' | relative_url }}" {% if page.url contains '/eventos' %}class="active"{% endif %}>Events</a></li>
+                <li class="lang-switcher">
+                    <a href="{{ page.url | remove: '/en' }}" title="Português">🇧🇷 PT</a>
+                </li>
+            </ul>
+            {% else %}
+            <!-- Portuguese Navigation -->
             <ul class="nav-menu">
                 <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
                 <li><a href="{{ '/sobre/' | relative_url }}" {% if page.url contains '/sobre' %}class="active"{% endif %}>Sobre</a></li>
                 <li><a href="{{ '/blog/' | relative_url }}" {% if page.url contains '/blog' %}class="active"{% endif %}>Blog</a></li>
                 <li><a href="{{ '/eventos/' | relative_url }}" {% if page.url contains '/eventos' %}class="active"{% endif %}>Eventos</a></li>
+                <li class="lang-switcher">
+                    <a href="/en{{ page.url }}" title="English">🇺🇸 EN</a>
+                </li>
             </ul>
+            {% endif %}
         </nav>
     </div>
 </header>

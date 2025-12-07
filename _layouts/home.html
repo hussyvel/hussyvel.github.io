@@ -5,15 +5,29 @@ layout: default
 <div class="home">
     <section class="hero">
         <h1 class="hero-title">{{ site.title }}</h1>
+        {% if page.lang == "en" %}
+        <p class="hero-description">A blog about technology, development and innovation</p>
+        {% else %}
         <p class="hero-description">{{ site.description }}</p>
+        {% endif %}
     </section>
 
     <section class="posts-list">
+        {% if page.lang == "en" %}
+        <h2 class="section-title">Latest Posts</h2>
+        {% else %}
         <h2 class="section-title">Últimos Posts</h2>
+        {% endif %}
 
-        {% if site.posts.size > 0 %}
+        {% if page.lang == "en" %}
+            {% assign filtered_posts = site.posts | where: "lang", "en" %}
+        {% else %}
+            {% assign filtered_posts = site.posts | where_exp: "post", "post.lang != 'en'" %}
+        {% endif %}
+
+        {% if filtered_posts.size > 0 %}
         <div class="posts-grid">
-            {% for post in site.posts limit: 10 %}
+            {% for post in filtered_posts limit: 10 %}
             <article class="post-card">
                 {% if post.image %}
                 <div class="post-card-image">
@@ -30,7 +44,11 @@ layout: default
 
                     <div class="post-card-meta">
                         <time datetime="{{ post.date | date_to_xmlschema }}">
+                            {% if page.lang == "en" %}
+                            {{ post.date | date: "%m/%d/%Y" }}
+                            {% else %}
                             {{ post.date | date: "%d/%m/%Y" }}
+                            {% endif %}
                         </time>
                         {% if post.categories %}
                         <span class="post-card-category">{{ post.categories | first }}</span>
@@ -41,15 +59,25 @@ layout: default
                         {{ post.excerpt | strip_html | truncatewords: 30 }}
                     </p>
 
+                    {% if page.lang == "en" %}
+                    <a href="{{ post.url | relative_url }}" class="post-card-link">
+                        Read more →
+                    </a>
+                    {% else %}
                     <a href="{{ post.url | relative_url }}" class="post-card-link">
                         Ler mais →
                     </a>
+                    {% endif %}
                 </div>
             </article>
             {% endfor %}
         </div>
         {% else %}
-        <p class="no-posts">Nenhum post publicado ainda. Em breve teremos conteúdo incrível por aqui!</p>
+            {% if page.lang == "en" %}
+            <p class="no-posts">No posts published yet. Amazing content coming soon!</p>
+            {% else %}
+            <p class="no-posts">Nenhum post publicado ainda. Em breve teremos conteúdo incrível por aqui!</p>
+            {% endif %}
         {% endif %}
     </section>
 

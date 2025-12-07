@@ -64,3 +64,28 @@ timezone: America/Sao_Paulo
 
 # Language
 lang: pt-BR
+
+# Comments System
+# Para ativar comentários, siga as instruções em README.md
+comments:
+  enabled: false  # Mude para true para ativar
+  provider: "giscus"  # Opções: giscus, disqus, utterances
+
+  # Giscus (Recomendado - Grátis, baseado em GitHub Discussions)
+  # 1. Ative GitHub Discussions no seu repositório
+  # 2. Instale o app Giscus: https://github.com/apps/giscus
+  # 3. Configure em: https://giscus.app/
+  # 4. Cole os valores gerados abaixo
+  giscus:
+    repo: "hussyvel/hussyvel.github.io"
+    repo_id: ""  # Cole aqui o repo_id do giscus.app
+    category: "Comments"
+    category_id: ""  # Cole aqui o category_id do giscus.app
+
+  # Disqus (Alternativa - Tem anúncios na versão grátis)
+  disqus:
+    shortname: ""  # Seu shortname do Disqus
+
+  # Utterances (Alternativa - Baseado em GitHub Issues)
+  utterances:
+    repo: "hussyvel/hussyvel.github.io"

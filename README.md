@@ -11,6 +11,8 @@ Um blog moderno sobre tecnologia, desenvolvimento e inovação, construído com 
 - 🔍 SEO otimizado
 - 📊 Suporte a RSS feed
 - 🌐 Sitemap automático
+- 🌍 **Multilíngue** - Suporte completo para Português e Inglês
+- 💬 **Comentários** - Sistema de comentários integrado (Giscus, Disqus ou Utterances)
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -161,6 +163,113 @@ const saudacao = (nome) => {
   console.log(`Olá, ${nome}!`);
 };
 \`\`\`
+
+## 🌍 Multilíngue (Português / Inglês)
+
+O blog suporta dois idiomas: Português (padrão) e Inglês.
+
+### Estrutura de URLs
+
+- **Português**: `https://hussyvel.github.io/` (raiz)
+- **Inglês**: `https://hussyvel.github.io/en/`
+
+### Criar Post em Inglês
+
+1. Crie o arquivo em `en/_posts/YYYY-MM-DD-titulo.md`
+2. Adicione `lang: en` no front matter:
+
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: 2025-12-07 10:00:00 -0300
+categories: [technology]
+tags: [programming, web]
+author: Your Name
+lang: en
+permalink: /en/blog/:year/:month/:day/:title/
+---
+```
+
+### Seletor de Idioma
+
+O seletor de idioma aparece automaticamente no header do site (bandeiras 🇧🇷 PT / 🇺🇸 EN).
+
+## 💬 Sistema de Comentários
+
+O blog suporta três sistemas de comentários: **Giscus** (recomendado), **Disqus** e **Utterances**.
+
+### Ativar Comentários com Giscus (Recomendado)
+
+**Giscus** é gratuito, open source e usa GitHub Discussions. Sem anúncios!
+
+#### Passo 1: Ativar GitHub Discussions
+
+1. Vá para: https://github.com/hussyvel/hussyvel.github.io/settings
+2. Na seção "Features", marque "Discussions"
+3. Clique em "Set up discussions"
+
+#### Passo 2: Instalar Giscus App
+
+1. Instale o app: https://github.com/apps/giscus
+2. Autorize para o repositório `hussyvel/hussyvel.github.io`
+
+#### Passo 3: Configurar Giscus
+
+1. Acesse: https://giscus.app/
+2. Preencha:
+   - **Repositório**: `hussyvel/hussyvel.github.io`
+   - **Page ↔️ Discussions Mapping**: "Discussion title contains page `pathname`"
+   - **Discussion Category**: "Comments" (ou crie uma nova categoria)
+3. Copie os valores gerados (`repo-id` e `category-id`)
+
+#### Passo 4: Atualizar _config.yml
+
+Abra `_config.yml` e atualize:
+
+```yaml
+comments:
+  enabled: true  # Mude para true
+  provider: "giscus"
+
+  giscus:
+    repo: "hussyvel/hussyvel.github.io"
+    repo_id: "COLE_AQUI_O_REPO_ID"  # Do giscus.app
+    category: "Comments"
+    category_id: "COLE_AQUI_O_CATEGORY_ID"  # Do giscus.app
+```
+
+#### Passo 5: Commit e Push
+
+```bash
+git add _config.yml
+git commit -m "Ativa sistema de comentários Giscus"
+git push
+```
+
+Pronto! Os comentários aparecerão automaticamente em todos os posts. 🎉
+
+### Alternativas
+
+#### Disqus
+```yaml
+comments:
+  enabled: true
+  provider: "disqus"
+  disqus:
+    shortname: "seu-shortname-disqus"
+```
+*Nota: A versão grátis do Disqus exibe anúncios*
+
+#### Utterances
+```yaml
+comments:
+  enabled: true
+  provider: "utterances"
+  utterances:
+    repo: "hussyvel/hussyvel.github.io"
+```
+*Nota: Usa GitHub Issues para comentários*
 
 ## 🔧 Comandos Úteis
 

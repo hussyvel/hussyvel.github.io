@@ -1,0 +1,94 @@
+{% if site.comments.enabled %}
+<section class="comments-section">
+    <div class="comments-wrapper">
+        <h3 class="comments-title">💬 Comentários</h3>
+
+        {% if site.comments.provider == "giscus" %}
+        <!-- Giscus Comments -->
+        <script src="https://giscus.app/client.js"
+                data-repo="{{ site.comments.giscus.repo }}"
+                data-repo-id="{{ site.comments.giscus.repo_id }}"
+                data-category="{{ site.comments.giscus.category }}"
+                data-category-id="{{ site.comments.giscus.category_id }}"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="{{ page.lang | default: site.lang | default: 'pt' }}"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        {% elsif site.comments.provider == "disqus" %}
+        <!-- Disqus Comments -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = '{{ page.url | absolute_url }}';
+                this.page.identifier = '{{ page.id }}';
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Por favor habilite JavaScript para ver os comentários.</noscript>
+
+        {% elsif site.comments.provider == "utterances" %}
+        <!-- Utterances Comments -->
+        <script src="https://utteranc.es/client.js"
+                repo="{{ site.comments.utterances.repo }}"
+                issue-term="pathname"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
+
+        {% endif %}
+    </div>
+</section>
+
+<style>
+.comments-section {
+    max-width: 800px;
+    margin: var(--spacing-3xl) auto 0;
+    padding-top: var(--spacing-3xl);
+    border-top: 2px solid var(--border-color);
+}
+
+.comments-wrapper {
+    width: 100%;
+}
+
+.comments-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xl);
+    color: var(--text-primary);
+}
+
+/* Giscus customization */
+.giscus {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .comments-section {
+        padding: 0 var(--spacing-md);
+    }
+
+    .comments-title {
+        font-size: 1.25rem;
+    }
+}
+</style>
+
+{% else %}
+<!-- Comments disabled -->
+{% endif %}
