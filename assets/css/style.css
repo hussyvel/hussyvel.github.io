@@ -216,6 +216,9 @@ body {
    ================================ */
 .posts-list {
     margin-bottom: var(--spacing-3xl);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-title {
@@ -223,12 +226,21 @@ body {
     font-weight: 700;
     margin-bottom: var(--spacing-xl);
     color: var(--text-primary);
+    text-align: center;
 }
 
 .posts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: var(--spacing-xl);
+    justify-items: center;
+    max-width: 100%;
+}
+
+/* Quando há apenas 1 ou 2 posts, centralizar */
+.posts-grid .post-card {
+    max-width: 400px;
+    width: 100%;
 }
 
 .post-card {
