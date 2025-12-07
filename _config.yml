@@ -1,0 +1,66 @@
+# Configurações do Site
+title: Tech Blog
+description: Um blog sobre tecnologia, desenvolvimento e inovação
+author: Hussyvel
+email: seu-email@exemplo.com
+baseurl: "" # Deixe vazio para o domínio raiz
+url: "https://hussyvel.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Permalink structure
+permalink: /blog/:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Hussyvel"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Social links (opcional - personalize depois)
+github_username: hussyvel
+# twitter_username: seu_twitter
+# linkedin_username: seu_linkedin
+
+# Google Analytics (opcional - adicione depois)
+# google_analytics: UA-XXXXXXXX-X
+
+# Configurações de paginação
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Timezone
+timezone: America/Sao_Paulo
+
+# Language
+lang: pt-BR
