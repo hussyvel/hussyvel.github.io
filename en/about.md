@@ -9,21 +9,28 @@ lang: en
 
 Welcome to **{{ site.title }}**!
 
-This is a space dedicated to the **modern JavaScript ecosystem**, focused on cutting-edge frameworks and technologies for web development. Here you'll find practical articles, in-depth tutorials, and insights about:
+This is a space dedicated to **fundamental concepts and practical projects** using the most modern technologies in the JavaScript ecosystem. Here you'll find:
 
-- ⚛️ **React & Next.js** - Server Components, App Router, streaming, and optimizations
-- 🟢 **Node.js** - Backend, RESTful APIs, GraphQL, and microservices
-- 🗄️ **Databases** - PostgreSQL for relational data and Redis for caching
-- 🎨 **TypeScript** - Type safety, generics, and advanced patterns
-- 🎯 **Performance** - Core Web Vitals, bundle optimization, and caching strategies
-- 🧪 **Testing** - Jest, Testing Library, Playwright, and TDD
-- 🚀 **DevOps** - Docker, CI/CD, deployment, and monitoring
+### 🎯 Tech Stack
+
+- ⚛️ **React** - Hooks, Context API, advanced patterns, and component architecture
+- 🦅 **Nest.js** - Scalable Node.js backend framework with decorators, modules, and dependency injection
+- 🗄️ **PostgreSQL** - Data modeling, optimized queries, transactions, indexes, and normalization
+- 🔴 **Redis** - Distributed cache, pub/sub, sessions, rate limiting, and message queues
+
+### 📚 Content Types
+
+- **Concepts** - Solid fundamentals, theory, and design principles
+- **Projects** - Complete real-world practical implementations
+- **Architecture** - Design patterns, SOLID, clean architecture, DDD
+- **Best Practices** - Code review, automated testing, security
+- **Performance** - Optimization, scalability, and monitoring
 
 ## About the Author
 
-I'm a **Java developer** with strong JavaScript experience and a passion for the modern web development ecosystem. After years working with Java on the backend, I discovered the power and versatility of full-stack JavaScript, especially with React, Next.js, and Node.js.
+I'm a **Java developer** with backend experience and passionate about exploring the modern JavaScript ecosystem. I believe that combining Java and JavaScript knowledge creates unique perspectives on software architecture, best practices, and design patterns.
 
-I believe that sharing knowledge and practical experiences is essential for the growth of the developer community. My goal is to document my journey and help other developers master these modern technologies.
+My goal is to share solid concepts and practical projects that help other developers build robust and scalable applications.
 
 ## Blog Objectives
 

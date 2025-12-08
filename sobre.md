@@ -8,21 +8,28 @@ permalink: /sobre/
 
 Bem-vindo ao **{{ site.title }}**!
 
-Este é um espaço dedicado ao **ecossistema JavaScript moderno**, focado em frameworks e tecnologias de ponta para desenvolvimento web. Aqui você encontrará artigos práticos, tutoriais aprofundados e reflexões sobre:
+Este é um espaço dedicado a **conceitos fundamentais e projetos práticos** com as tecnologias mais modernas do ecossistema JavaScript. Aqui você encontrará:
 
-- ⚛️ **React & Next.js** - Server Components, App Router, streaming e otimizações
-- 🟢 **Node.js** - Backend, APIs RESTful, GraphQL e microsserviços
-- 🗄️ **Bancos de Dados** - PostgreSQL para dados relacionais e Redis para cache
-- 🎨 **TypeScript** - Type safety, generics e patterns avançados
-- 🎯 **Performance** - Core Web Vitals, otimização de bundles e estratégias de cache
-- 🧪 **Testing** - Jest, Testing Library, Playwright e TDD
-- 🚀 **DevOps** - Docker, CI/CD, deployment e monitoramento
+### 🎯 Stack Técnica
+
+- ⚛️ **React** - Hooks, Context API, patterns avançados e arquitetura de componentes
+- 🦅 **Nest.js** - Framework backend Node.js com arquitetura escalável, decorators, módulos e injeção de dependências
+- 🗄️ **PostgreSQL** - Modelagem de dados, queries otimizadas, transações, índices e normalização
+- 🔴 **Redis** - Cache distribuído, pub/sub, sessions, rate limiting e filas de mensagens
+
+### 📚 Tipo de Conteúdo
+
+- **Conceitos** - Fundamentos sólidos, teoria e princípios de design
+- **Projetos** - Implementações práticas completas do mundo real
+- **Arquitetura** - Design patterns, SOLID, clean architecture, DDD
+- **Boas Práticas** - Code review, testes automatizados, segurança
+- **Performance** - Otimização, escalabilidade e monitoramento
 
 ## Sobre o Autor
 
-Sou um **desenvolvedor Java** com forte experiência em JavaScript e apaixonado pelo ecossistema moderno de desenvolvimento web. Depois de anos trabalhando com Java no backend, descobri o poder e a versatilidade do JavaScript full-stack, especialmente com React, Next.js e Node.js.
+Sou um **desenvolvedor Java** com experiência em backend e apaixonado por explorar o ecossistema JavaScript moderno. Acredito que a combinação de conhecimento em Java e JavaScript cria perspectivas únicas sobre arquitetura de software, boas práticas e design patterns.
 
-Acredito que compartilhar conhecimento e experiências práticas é fundamental para o crescimento da comunidade de desenvolvedores. Meu objetivo é documentar minha jornada e ajudar outros desenvolvedores a dominarem essas tecnologias modernas.
+Meu objetivo é compartilhar conceitos sólidos e projetos práticos que ajudem outros desenvolvedores a construir aplicações robustas e escaláveis.
 
 ## Objetivo do Blog
 
