@@ -9,19 +9,21 @@ lang: en
 
 Welcome to **{{ site.title }}**!
 
-This is a space dedicated to technology, software development, innovation, and everything related to the tech world. Here you'll find articles, tutorials, tips, and insights about:
+This is a space dedicated to the **modern JavaScript ecosystem**, focused on cutting-edge frameworks and technologies for web development. Here you'll find practical articles, in-depth tutorials, and insights about:
 
-- 💻 **Software Development** - Programming languages, frameworks, and best practices
-- 🚀 **DevOps and Cloud** - Infrastructure, CI/CD, containerization, and cloud services
-- 🎨 **Front-end and UI/UX** - Interface design, user experience, and web development
-- 📱 **Mobile** - iOS and Android app development
-- 🤖 **Artificial Intelligence** - Machine Learning, generative AI, and automation
-- 🔐 **Security** - Best practices, cybersecurity, and data protection
-- 🌐 **Web3 and Blockchain** - Decentralized technologies and the future of the internet
+- ⚛️ **React & Next.js** - Server Components, App Router, streaming, and optimizations
+- 🟢 **Node.js** - Backend, RESTful APIs, GraphQL, and microservices
+- 🗄️ **Databases** - PostgreSQL for relational data and Redis for caching
+- 🎨 **TypeScript** - Type safety, generics, and advanced patterns
+- 🎯 **Performance** - Core Web Vitals, bundle optimization, and caching strategies
+- 🧪 **Testing** - Jest, Testing Library, Playwright, and TDD
+- 🚀 **DevOps** - Docker, CI/CD, deployment, and monitoring
 
 ## About the Author
 
-I'm a technology enthusiast passionate about learning and sharing knowledge. Over the years, I've been exploring different areas of technology and I believe that sharing experiences is essential for the growth of the tech community.
+I'm a **Java developer** with strong JavaScript experience and a passion for the modern web development ecosystem. After years working with Java on the backend, I discovered the power and versatility of full-stack JavaScript, especially with React, Next.js, and Node.js.
+
+I believe that sharing knowledge and practical experiences is essential for the growth of the developer community. My goal is to document my journey and help other developers master these modern technologies.
 
 ## Blog Objectives
 
