@@ -9,28 +9,30 @@ lang: en
 
 Welcome to **{{ site.title }}**!
 
-This is a space dedicated to the modern JavaScript ecosystem, focusing on the latest technologies and current web development practices. Here you'll find:
+This is a space dedicated to the **modern JavaScript ecosystem**, focused on cutting-edge frameworks and technologies for web development. Here you'll find practical articles, in-depth tutorials, and insights about:
 
-- ⚛️ **React & Next.js** - Components, hooks, server components, and modern architectures
-- 🚀 **Node.js** - Backend with Express, Fastify, Nest.js and RESTful/GraphQL APIs
-- 💾 **Databases** - PostgreSQL, Redis, modern ORMs (Prisma, Drizzle)
-- 🎨 **Modern Frontend** - TypeScript, Tailwind CSS, state management and performance
-- 📦 **Tools** - Vite, Turbopack, pnpm, Docker and modern deployment
-- 🧪 **Testing** - Jest, Vitest, Testing Library and best practices
-- 🔐 **Authentication** - NextAuth, JWT, OAuth and web security
+- ⚛️ **React & Next.js** - Server Components, App Router, streaming, and optimizations
+- 🟢 **Node.js** - Backend, RESTful APIs, GraphQL, and microservices
+- 🗄️ **Databases** - PostgreSQL for relational data and Redis for caching
+- 🎨 **TypeScript** - Type safety, generics, and advanced patterns
+- 🎯 **Performance** - Core Web Vitals, bundle optimization, and caching strategies
+- 🧪 **Testing** - Jest, Testing Library, Playwright, and TDD
+- 🚀 **DevOps** - Docker, CI/CD, deployment, and monitoring
 
 ## About the Author
 
-I'm a Java developer with backend experience, but passionate about exploring the modern JavaScript ecosystem. I believe that combining Java and JavaScript knowledge creates unique perspectives on software architecture and best practices.
+I'm a **Java developer** with strong JavaScript experience and a passion for the modern web development ecosystem. After years working with Java on the backend, I discovered the power and versatility of full-stack JavaScript, especially with React, Next.js, and Node.js.
 
-## Blog Goals
+I believe that sharing knowledge and practical experiences is essential for the growth of the developer community. My goal is to document my journey and help other developers master these modern technologies.
 
-This blog offers:
+## Blog Objectives
 
-1. **Practical Tutorials** - Complete step-by-step projects
-2. **Framework Comparisons** - Objective technology analyses
-3. **Best Practices** - Proven patterns and techniques
-4. **Real Projects** - Real-world use cases
+The main objectives of this blog are:
+
+1. **Educate** - Share knowledge clearly and accessibly
+2. **Inspire** - Show the possibilities that technology offers
+3. **Connect** - Create a community of people interested in technology
+4. **Document** - Record learnings and experiences
 
 ## Contact
 
