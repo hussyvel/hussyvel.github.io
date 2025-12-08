@@ -8,28 +8,28 @@ permalink: /sobre/
 
 Bem-vindo ao **{{ site.title }}**!
 
-Este é um espaço dedicado à tecnologia, desenvolvimento de software, inovação e tudo que envolve o mundo tech. Aqui você encontrará artigos, tutoriais, dicas e reflexões sobre:
+Este é um espaço dedicado ao ecossistema JavaScript moderno, focando nas tecnologias mais recentes e práticas atuais de desenvolvimento web. Aqui você encontrará:
 
-- 💻 **Desenvolvimento de Software** - Linguagens de programação, frameworks e boas práticas
-- 🚀 **DevOps e Cloud** - Infraestrutura, CI/CD, containerização e serviços em nuvem
-- 🎨 **Front-end e UI/UX** - Design de interfaces, experiência do usuário e desenvolvimento web
-- 📱 **Mobile** - Desenvolvimento de aplicativos para iOS e Android
-- 🤖 **Inteligência Artificial** - Machine Learning, IA generativa e automação
-- 🔐 **Segurança** - Boas práticas, cibersegurança e proteção de dados
-- 🌐 **Web3 e Blockchain** - Tecnologias descentralizadas e o futuro da internet
+- ⚛️ **React & Next.js** - Componentes, hooks, server components, e arquiteturas modernas
+- 🚀 **Node.js** - Backend com Express, Fastify, Nest.js e APIs RESTful/GraphQL
+- 💾 **Bancos de Dados** - PostgreSQL, Redis, ORMs modernos (Prisma, Drizzle)
+- 🎨 **Frontend Moderno** - TypeScript, Tailwind CSS, state management e performance
+- 📦 **Ferramentas** - Vite, Turbopack, pnpm, Docker e deploy moderno
+- 🧪 **Testes** - Jest, Vitest, Testing Library e melhores práticas
+- 🔐 **Autenticação** - NextAuth, JWT, OAuth e segurança web
 
 ## Sobre o Autor
 
-Sou um entusiasta de tecnologia apaixonado por aprender e compartilhar conhecimento. Ao longo dos anos, venho explorando diferentes áreas da tecnologia e acredito que compartilhar experiências é fundamental para o crescimento da comunidade tech.
+Sou desenvolvedor Java com experiência em backend, mas apaixonado por explorar o ecossistema JavaScript moderno. Acredito que a combinação de conhecimento em Java e JavaScript cria perspectivas únicas sobre arquitetura de software e boas práticas.
 
-## Objetivo do Blog
+## Proposta do Blog
 
-O objetivo principal deste blog é:
+Este blog oferece:
 
-1. **Educar** - Compartilhar conhecimento de forma clara e acessível
-2. **Inspirar** - Mostrar as possibilidades que a tecnologia oferece
-3. **Conectar** - Criar uma comunidade de pessoas interessadas em tecnologia
-4. **Documentar** - Registrar aprendizados e experiências
+1. **Tutoriais Práticos** - Projetos completos passo a passo
+2. **Comparações de Frameworks** - Análises objetivas de tecnologias
+3. **Best Practices** - Padrões e técnicas comprovadas
+4. **Projetos Reais** - Casos de uso do mundo real
 
 ## Contato
 

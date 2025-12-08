@@ -9,28 +9,28 @@ lang: en
 
 Welcome to **{{ site.title }}**!
 
-This is a space dedicated to technology, software development, innovation, and everything related to the tech world. Here you'll find articles, tutorials, tips, and insights about:
+This is a space dedicated to the modern JavaScript ecosystem, focusing on the latest technologies and current web development practices. Here you'll find:
 
-- 💻 **Software Development** - Programming languages, frameworks, and best practices
-- 🚀 **DevOps and Cloud** - Infrastructure, CI/CD, containerization, and cloud services
-- 🎨 **Front-end and UI/UX** - Interface design, user experience, and web development
-- 📱 **Mobile** - iOS and Android app development
-- 🤖 **Artificial Intelligence** - Machine Learning, generative AI, and automation
-- 🔐 **Security** - Best practices, cybersecurity, and data protection
-- 🌐 **Web3 and Blockchain** - Decentralized technologies and the future of the internet
+- ⚛️ **React & Next.js** - Components, hooks, server components, and modern architectures
+- 🚀 **Node.js** - Backend with Express, Fastify, Nest.js and RESTful/GraphQL APIs
+- 💾 **Databases** - PostgreSQL, Redis, modern ORMs (Prisma, Drizzle)
+- 🎨 **Modern Frontend** - TypeScript, Tailwind CSS, state management and performance
+- 📦 **Tools** - Vite, Turbopack, pnpm, Docker and modern deployment
+- 🧪 **Testing** - Jest, Vitest, Testing Library and best practices
+- 🔐 **Authentication** - NextAuth, JWT, OAuth and web security
 
 ## About the Author
 
-I'm a technology enthusiast passionate about learning and sharing knowledge. Over the years, I've been exploring different areas of technology and I believe that sharing experiences is essential for the growth of the tech community.
+I'm a Java developer with backend experience, but passionate about exploring the modern JavaScript ecosystem. I believe that combining Java and JavaScript knowledge creates unique perspectives on software architecture and best practices.
 
-## Blog Objectives
+## Blog Goals
 
-The main objectives of this blog are:
+This blog offers:
 
-1. **Educate** - Share knowledge in a clear and accessible way
-2. **Inspire** - Show the possibilities that technology offers
-3. **Connect** - Create a community of people interested in technology
-4. **Document** - Record learnings and experiences
+1. **Practical Tutorials** - Complete step-by-step projects
+2. **Framework Comparisons** - Objective technology analyses
+3. **Best Practices** - Proven patterns and techniques
+4. **Real Projects** - Real-world use cases
 
 ## Contact
 
