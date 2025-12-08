@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Layout from '@/components/Layout'
+import { getTranslation } from '@/lib/i18n/translations'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -12,10 +13,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const t = getTranslation('pt')
+
   return (
     <html lang="pt-BR">
       <body>
-        <Layout>{children}</Layout>
+        <Layout locale="pt" t={t}>{children}</Layout>
       </body>
     </html>
   )
