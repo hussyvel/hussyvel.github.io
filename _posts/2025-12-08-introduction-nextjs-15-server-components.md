@@ -6,7 +6,6 @@ categories: [react, nextjs]
 tags: [react, nextjs, server-components, javascript, tutorial]
 author: Hussyvel
 lang: en
-permalink: /en/blog/:year/:month/:day/:title/
 ---
 
 # Introduction to Next.js 15 and React Server Components
