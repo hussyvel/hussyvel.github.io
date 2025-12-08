@@ -9,28 +9,30 @@ lang: fr
 
 Bienvenue sur **{{ site.title }}** !
 
-Ceci est un espace dédié à l'écosystème JavaScript moderne, axé sur les dernières technologies et les pratiques actuelles de développement web. Vous y trouverez :
+Ceci est un espace dédié à **l'écosystème JavaScript moderne**, axé sur les frameworks et technologies de pointe pour le développement web. Vous y trouverez des articles pratiques, des tutoriels approfondis et des réflexions sur :
 
-- ⚛️ **React & Next.js** - Composants, hooks, server components et architectures modernes
-- 🚀 **Node.js** - Backend avec Express, Fastify, Nest.js et APIs RESTful/GraphQL
-- 💾 **Bases de Données** - PostgreSQL, Redis, ORMs modernes (Prisma, Drizzle)
-- 🎨 **Frontend Moderne** - TypeScript, Tailwind CSS, gestion d'état et performance
-- 📦 **Outils** - Vite, Turbopack, pnpm, Docker et déploiement moderne
-- 🧪 **Tests** - Jest, Vitest, Testing Library et meilleures pratiques
-- 🔐 **Authentification** - NextAuth, JWT, OAuth et sécurité web
+- ⚛️ **React & Next.js** - Server Components, App Router, streaming et optimisations
+- 🟢 **Node.js** - Backend, APIs RESTful, GraphQL et microservices
+- 🗄️ **Bases de Données** - PostgreSQL pour les données relationnelles et Redis pour le cache
+- 🎨 **TypeScript** - Type safety, generics et patterns avancés
+- 🎯 **Performance** - Core Web Vitals, optimisation de bundles et stratégies de cache
+- 🧪 **Testing** - Jest, Testing Library, Playwright et TDD
+- 🚀 **DevOps** - Docker, CI/CD, déploiement et monitoring
 
 ## À propos de l'Auteur
 
-Je suis développeur Java avec une expérience en backend, mais passionné par l'exploration de l'écosystème JavaScript moderne. Je crois que la combinaison de connaissances en Java et JavaScript crée des perspectives uniques sur l'architecture logicielle et les meilleures pratiques.
+Je suis un **développeur Java** avec une solide expérience en JavaScript et passionné par l'écosystème moderne du développement web. Après des années de travail avec Java côté backend, j'ai découvert la puissance et la polyvalence du JavaScript full-stack, en particulier avec React, Next.js et Node.js.
+
+Je crois que le partage de connaissances et d'expériences pratiques est essentiel pour la croissance de la communauté des développeurs. Mon objectif est de documenter mon parcours et d'aider d'autres développeurs à maîtriser ces technologies modernes.
 
 ## Objectifs du Blog
 
-Ce blog propose :
+Les principaux objectifs de ce blog sont :
 
-1. **Tutoriels Pratiques** - Projets complets étape par étape
-2. **Comparaisons de Frameworks** - Analyses objectives de technologies
-3. **Meilleures Pratiques** - Modèles et techniques éprouvés
-4. **Projets Réels** - Cas d'usage du monde réel
+1. **Éduquer** - Partager des connaissances de manière claire et accessible
+2. **Inspirer** - Montrer les possibilités qu'offre la technologie
+3. **Connecter** - Créer une communauté de personnes intéressées par la technologie
+4. **Documenter** - Enregistrer les apprentissages et les expériences
 
 ## Contact
 
