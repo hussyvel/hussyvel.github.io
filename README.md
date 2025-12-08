@@ -1,6 +1,6 @@
 # Modern JavaScript
 
-Blog sobre React, Next.js, Node.js e tecnologias modernas de desenvolvimento web, construído com Jekyll e hospedado no GitHub Pages.
+Blog sobre React, Nest.js, Redis e PostgreSQL - Conceitos e projetos práticos de desenvolvimento web moderno, construído com Jekyll e hospedado no GitHub Pages.
 
 ## 🚀 Características
 
@@ -17,15 +17,22 @@ Blog sobre React, Next.js, Node.js e tecnologias modernas de desenvolvimento web
 
 ## 🎯 Foco do Blog
 
-Este blog é dedicado ao **ecossistema JavaScript moderno**, cobrindo:
+Este blog é dedicado a **conceitos fundamentais e projetos práticos** com as seguintes tecnologias:
 
-- ⚛️ **React & Next.js** - Server Components, App Router, streaming e otimizações
-- 🟢 **Node.js** - Backend, APIs RESTful, GraphQL e microsserviços
-- 🗄️ **Bancos de Dados** - PostgreSQL para dados relacionais e Redis para cache
-- 🎨 **TypeScript** - Type safety, generics e patterns avançados
-- 🎯 **Performance** - Core Web Vitals, otimização de bundles e estratégias de cache
-- 🧪 **Testing** - Jest, Testing Library, Playwright e TDD
-- 🚀 **DevOps** - Docker, CI/CD, deployment e monitoramento
+### Stack Principal
+
+- ⚛️ **React** - Hooks, Context API, patterns avançados e boas práticas
+- 🦅 **Nest.js** - Framework backend Node.js com arquitetura escalável, módulos, injeção de dependências
+- 🗄️ **PostgreSQL** - Banco de dados relacional, queries otimizadas, transações e modelagem
+- 🔴 **Redis** - Cache distribuído, pub/sub, sessions e filas
+
+### Abordagem de Conteúdo
+
+- 📚 **Conceitos** - Fundamentos sólidos e teoria aplicada
+- 🛠️ **Projetos** - Implementações práticas do mundo real
+- 🏗️ **Arquitetura** - Design patterns, SOLID, clean code
+- 🔧 **Boas Práticas** - Code review, testes, segurança
+- 🚀 **Performance** - Otimização e escalabilidade
 
 ## 🛠️ Tecnologias Utilizadas
 
