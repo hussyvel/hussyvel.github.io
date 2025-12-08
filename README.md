@@ -1,10 +1,10 @@
-# Tech Blog
+# Modern JavaScript
 
-Um blog moderno sobre tecnologia, desenvolvimento e inovação, construído com Jekyll e hospedado no GitHub Pages.
+Blog sobre React, Next.js, Node.js e tecnologias modernas de desenvolvimento web, construído com Jekyll e hospedado no GitHub Pages.
 
 ## 🚀 Características
 
-- ✨ Design moderno e responsivo
+- ✨ Design moderno e responsivo com cores (azul)
 - 📱 Mobile-friendly
 - 🎨 CSS customizado com variáveis CSS
 - 📝 Sistema de posts com categorias e tags
@@ -14,6 +14,18 @@ Um blog moderno sobre tecnologia, desenvolvimento e inovação, construído com 
 - 🌍 **Trilíngue** - Suporte completo para Português, Inglês e Francês
 - 💬 **Comentários** - Sistema de comentários integrado (Giscus, Disqus ou Utterances)
 - 📖 **Guia Detalhado** - Instruções completas de configuração em [SETUP_LOCAL.md](SETUP_LOCAL.md)
+
+## 🎯 Foco do Blog
+
+Este blog é dedicado ao **ecossistema JavaScript moderno**, cobrindo:
+
+- ⚛️ **React & Next.js** - Server Components, App Router, streaming e otimizações
+- 🟢 **Node.js** - Backend, APIs RESTful, GraphQL e microsserviços
+- 🗄️ **Bancos de Dados** - PostgreSQL para dados relacionais e Redis para cache
+- 🎨 **TypeScript** - Type safety, generics e patterns avançados
+- 🎯 **Performance** - Core Web Vitals, otimização de bundles e estratégias de cache
+- 🧪 **Testing** - Jest, Testing Library, Playwright e TDD
+- 🚀 **DevOps** - Docker, CI/CD, deployment e monitoramento
 
 ## 🛠️ Tecnologias Utilizadas
 
