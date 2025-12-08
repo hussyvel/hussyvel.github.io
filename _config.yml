@@ -1,6 +1,6 @@
 # Configurações do Site
-title: Tech Blog
-description: Um blog sobre tecnologia, desenvolvimento e inovação
+title: Modern JavaScript
+description: Blog sobre React, Next.js, Node.js e tecnologias modernas de desenvolvimento web
 author: Hussyvel
 email: seu-email@exemplo.com
 baseurl: "" # Deixe vazio para o domínio raiz
