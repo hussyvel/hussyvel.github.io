@@ -11,7 +11,8 @@ permalink: /blog/
     </header>
 
     <div class="posts-archive">
-        {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+        {% assign portuguesePosts = site.posts | where: "lang", "pt" %}
+        {% assign postsByYear = portuguesePosts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
         {% for year in postsByYear %}
         <section class="year-section">
@@ -48,6 +49,10 @@ permalink: /blog/
             </div>
         </section>
         {% endfor %}
+
+        {% if portuguesePosts.size == 0 %}
+        <p class="no-posts">Nenhum post publicado ainda. Conteúdo incrível chegando em breve!</p>
+        {% endif %}
     </div>
 </div>
 
@@ -155,6 +160,13 @@ permalink: /blog/
     font-size: 0.95rem;
     color: var(--text-secondary);
     margin: 0;
+}
+
+.no-posts {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    padding: var(--spacing-3xl) 0;
 }
 
 @media (max-width: 768px) {
