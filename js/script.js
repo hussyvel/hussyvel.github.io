@@ -217,21 +217,6 @@ const projects=[
     ],
     github:'https://github.com/hussyvel/',
   },
-  {
-    id:'b8e9c22', branch:'main', status:'STABLE', sc:'#00e5ff',
-    name:'SQL → Excel Exporter', short:'PostgreSQL automation tool',
-    impact:'Eliminated hours of manual data export work',
-    desc:'Python tool to export PostgreSQL query results into professionally formatted Excel spreadsheets — frozen headers, alternating row colors, column auto-sizing.',
-    role:'Sole developer. Designed and built the full pipeline from DB connection to formatted output.',
-    tech:['Python','psycopg2','pandas','openpyxl'],
-    lines:[
-      '→ Direct PostgreSQL connection via psycopg2',
-      '→ Frozen headers + alternating colored rows',
-      '→ Auto-column sizing and formatting',
-      '→ Batch query support',
-    ],
-    github:'https://github.com/hussyvel/', youtube:null,
-  },
 ];
 
 const pgrid=document.getElementById('projects-grid');
